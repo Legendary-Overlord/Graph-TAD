@@ -10,66 +10,110 @@ import java.util.Set;
 import java.util.Stack;
 
 public class Graph<E> {
-	
-	private Map<E, List<E>> adjVertices;
 
-	public Graph(Map<E, List<E>> adjVertices) {
+	private Map<Vertex<E>, List<Vertex<E>>> adjVertices;
+
+	public Graph(Map<Vertex<E>, List<Vertex<E>>> adjVertices) {
 		this.adjVertices = adjVertices;
 	}
-	
-	void addVertex(E e) {
-	    adjVertices.putIfAbsent(e, new ArrayList<>());
+
+	public void addVertex(E e) {
+	    adjVertices.putIfAbsent(new Vertex<E>(e), new ArrayList<>());
 	}
-	 
-	void removeVertex(E e1) {
-	    adjVertices.values().stream().forEach(e -> e.remove(e1));
-	    adjVertices.remove(e1);
+
+	public void removeVertex(E obj) {
+	    Vertex<E> v = new Vertex<E>(obj);
+	    adjVertices.values().stream().forEach(e -> e.remove(v));
+	    adjVertices.remove(new Vertex<E>(obj));
 	}
-	void addEdge(E e1,E e2) {
-	    adjVertices.get(e1).add(e2);
-	    adjVertices.get(e2).add(e1);
+	public void addEdge(E obj1, E obj2) {
+	    Vertex<E> v1 = new Vertex<E>(obj1);
+	    Vertex<E> v2 = new Vertex<E>(obj2);
+	    adjVertices.get(v1).add(v2);
+	    adjVertices.get(v2).add(v1);
 	}
-	void removeEdge(E e1, E e2) {
-	    List<E> eV1 = adjVertices.get(e1);
-	    List<E> eV2 = adjVertices.get(e2);
+	public void removeEdge(E obj1, E obj2) {
+	    Vertex<E> v1 = new Vertex<E>(obj1);
+	    Vertex<E> v2 = new Vertex<E>(obj2);
+	    List<Vertex<E>> eV1 = adjVertices.get(v1);
+	    List<Vertex<E>> eV2 = adjVertices.get(v2);
 	    if (eV1 != null)
-	        eV1.remove(e2);
+	        eV1.remove(v2);
 	    if (eV2 != null)
-	        eV2.remove(e1);
+	        eV2.remove(v1);
 	}
-	List<E> getAdjVertices(E e) {
-	    return adjVertices.get(e);
+	public List<Vertex<E>> getAdjVertices(E e) {
+	    return adjVertices.get(new Vertex<E>(e));
 	}
-	Set<E> depthFirstTraversal(Graph<E> graph, E root) {
-	    Set<E> visited = new LinkedHashSet<E>();
-	    Stack<E> stack = new Stack<E>();
+	public Set<Vertex<E>> depthFirstSearch(Graph<E> graph, Vertex<E> root) {
+		resetVertexCalculations(graph,root);
+	    Set<Vertex<E>> visited = new LinkedHashSet<Vertex<E>>();
+	    Stack<Vertex<E>> stack = new Stack<Vertex<E>>();
 	    stack.push(root);
 	    while (!stack.isEmpty()) {
-	        E vertex = stack.pop();
-	        if (!visited.contains(vertex)) {
-	            visited.add(vertex);
-	            for (E v : graph.getAdjVertices(vertex)) {              
+	    	Vertex<E> Vertex = stack.pop();
+	        if (!visited.contains(Vertex)) {
+	            visited.add(Vertex);
+	            for (Vertex<E> v : graph.getAdjVertices(Vertex.obj)) {              
 	                stack.push(v);
 	            }
 	        }
 	    }
 	    return visited;
 	}
-	Set<E> breadthFirstTraversal(Graph<E> graph, E root) {
-	    Set<E> visited = new LinkedHashSet<E>();
-	    Queue<E> queue = new LinkedList<E>();
+	public Set<Vertex<E>> breadthFirstSearch(Graph<E> graph, Vertex<E> root) {
+		resetVertexCalculations(graph,root);
+	    Set<Vertex<E>> visited = new LinkedHashSet<Vertex<E>>();
+	    Queue<Vertex<E>> queue = new LinkedList<Vertex<E>>();
 	    queue.add(root);
 	    visited.add(root);
 	    while (!queue.isEmpty()) {
-	        E vertex = queue.poll();
-	        for (E v : graph.getAdjVertices(vertex)) {
+	    	Vertex<E> Vertex = queue.poll();
+	        for (Vertex<E> v : graph.getAdjVertices(Vertex.obj)) {
 	            if (!visited.contains(v)) {
+	            	v.dist++;
+	            	v.pre=Vertex;
 	                visited.add(v);
 	                queue.add(v);
 	            }
 	        }
 	    }
 	    return visited;
+	}
+	public Set<Vertex<E>> printPath(Graph<E> graph, Vertex<E>a,Vertex<E>b){
+		LinkedHashSet<Vertex<E>> list = new LinkedHashSet<Vertex<E>>();
+		printPath(graph,a,b,list);
+		return list;
+	}
+	
+	private void printPath(Graph<E> graph,Vertex<E>a,Vertex<E>b,LinkedHashSet<Vertex<E>> lhs) {
+		if(a==b) {
+			lhs.add(a);
+		}else if(a.pre==null) {
+		//do nothing	
+		}else {
+			printPath(graph,a,b.pre,lhs);
+			lhs.add(a);
+		}
+	}
+	private void resetVertexCalculations(Graph<E> graph, Vertex<E> root) {
+		root.dist=0;
+		root.pre=null;
+		Set<Vertex<E>> visited = new LinkedHashSet<Vertex<E>>();
+	    Queue<Vertex<E>> queue = new LinkedList<Vertex<E>>();
+	    queue.add(root);
+	    visited.add(root);
+	    while (!queue.isEmpty()) {
+	    	Vertex<E> Vertex = queue.poll();
+	        for (Vertex<E> v : graph.getAdjVertices(Vertex.obj)) {
+	            if (!visited.contains(v)) {
+	            	v.dist=99999999;
+	            	v.pre=null;
+	                visited.add(v);
+	                queue.add(v);
+	            }
+	        }
+	    }
 	}
 
 }
