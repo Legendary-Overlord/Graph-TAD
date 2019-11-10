@@ -5,7 +5,10 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Queue;
+
+
 
 public class GraphAM<E> {
 
@@ -26,7 +29,7 @@ public class GraphAM<E> {
         vertexLookup = new ArrayList<>();
     }
 
-    public void addEdge(E from, E to) {
+     void addEdge(E from, E to) {
         addVertex(from);
         addVertex(to);
 
@@ -35,7 +38,7 @@ public class GraphAM<E> {
         adj[fromIndex][toIndex] = 1;
     }
 
-    private void addVertex(E e) {
+     void addVertex(E e) {
         if(!vertex.containsKey(e)) {
         	vertex.put(e, index);
             vertexLookup.add(index, e);
@@ -43,7 +46,7 @@ public class GraphAM<E> {
         }
     }
 
-    public void bfs(E start) {
+     void bfs(E start) {
         Queue<E> queue = new LinkedList<>();
         boolean[] visited = new boolean[vertex.size()]; 
 
@@ -68,7 +71,7 @@ public class GraphAM<E> {
 
     }
 
-    public void dfs(E start) {
+     void dfs(E start) {
         boolean[] visited = new boolean[vertex.size()];
         dfs(start, visited);
     }
@@ -87,6 +90,22 @@ public class GraphAM<E> {
         }
     }
 
+    public void FloydWarshallSolver() {
+    	double[][] dp;
+    	double[][] next;
+        index = adj.length;
+        dp = new double[index][index];
+        next = new double[index][index];
+
+        // Copy input matrix and setup 'next' matrix for path reconstruction.
+        for (int i = 0; i < index; i++) {
+          for (int j = 0; j < index; j++) {
+            if (adj[i][j] != VertexAM.INFINITY) next[i][j] = j;
+            dp[i][j] = adj[i][j];
+          }
+        }
+      }
+  
     private List<E> getAdjacentVertices(E e) {
         int index = vertex.get(e);
         List<E> result = new ArrayList<>();
@@ -97,5 +116,6 @@ public class GraphAM<E> {
         }
         return result;
     }
-
+    
+    	
 }
