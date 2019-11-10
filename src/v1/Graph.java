@@ -51,7 +51,7 @@ public class Graph<E> {
 	    Vertex<E> v2 = new Vertex<E>(obj2);
 	    adjVertices.get(v1).add(v2);
 	    adjVertices.get(v2).add(v1);
-	    Edge<E> x = new Edge(v1,v2,1.0);
+	    Edge<E> x = new Edge<>(v1,v2,1.0);
 	    if(!edgeWeight.contains(x))
 	    	edgeWeight.add(x);
 	}
@@ -60,7 +60,7 @@ public class Graph<E> {
 	    Vertex<E> v2 = new Vertex<E>(obj2);
 	    adjVertices.get(v1).add(v2);
 	    adjVertices.get(v2).add(v1);
-	    Edge<E> x = new Edge(v1,v2,w);
+	    Edge<E> x = new Edge<>(v1,v2,w);
 	    if(!edgeWeight.contains(x))
 	    	edgeWeight.add(x);
 	}
@@ -149,10 +149,17 @@ public class Graph<E> {
 			vertex.pre=null;
 		}
 	}
+	private void initGraph(Graph<E> g) {
+		g.adjVertices=adjVertices;
+		g.edgeWeight=edgeWeight;
+		g.vertexNum=vertexNum;
+		g.gSize=gSize;
+	}
 	public void dijkstra(Graph<E> graph, Vertex<E> a) {
 		a.dist=0;
+		initGraph(graph);
 		PriorityQueue<Vertex<E>> Q = new PriorityQueue<>(new PQComparator());
-		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v: adjVertices.entrySet()) {
+		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v: graph.adjVertices.entrySet()) {
 			Vertex<E> temp=null;
 			if((temp=v.getKey())!=a) {
 				temp.dist=Vertex.INFINITY;
@@ -163,7 +170,7 @@ public class Graph<E> {
 		while(!Q.isEmpty()) {
 			Vertex<E> u = Q.poll();
 			 for (Vertex<E> v : graph.getAdjVertices(u.obj)) {
-		           double alt = v.dist+getEdge(u,v).weight;
+		           double alt = v.dist+graph.getEdge(u,v).weight;
 		           if(alt<v.dist) {
 		        	   v.dist=alt;
 		        	   v.pre=u;
@@ -195,8 +202,9 @@ public class Graph<E> {
 		return dist;
 	}
 	public void prim(Graph<E> g) {
+		initGraph(g);
 		PriorityQueue<Vertex<E>> q =new PriorityQueue<>(new PQComparator());
-		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v : adjVertices.entrySet()) {
+		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v : g.adjVertices.entrySet()) {
 			Vertex<E> vertex = v.getKey();
 			vertex.dist=Vertex.INFINITY;
 			vertex.pre=null;
@@ -208,17 +216,15 @@ public class Graph<E> {
 		while(!q.isEmpty()) {
 			Vertex<E> u = q.poll();
 			for (Vertex<E> v : g.getAdjVertices(u.obj)) {
-		           if(q.contains(v)&&(v.dist>getEdge(u,v).weight)) {
-		        	   v.dist=getEdge(u,v).weight;
+		           if(q.contains(v)&&(v.dist>g.getEdge(u,v).weight)) {
+		        	   v.dist=g.getEdge(u,v).weight;
 		        	   v.pre=u;
 		        	   q.remove(v);
 		        	   q.add(v);
 		           }
 		        }
 		}
-		
 	}
-
 }
 @SuppressWarnings("rawtypes")
 class PQComparator implements Comparator<Vertex>{
