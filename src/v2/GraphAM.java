@@ -1,12 +1,15 @@
 package v2;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
+
+import v1.Vertex;
 
 
 
@@ -89,7 +92,43 @@ public class GraphAM<E> {
             }
         }
     }
-
+    public List<VertexAM<E>> dijkstra(GraphAM<E> graph, E r) {
+    	VertexAM<E> root = new VertexAM<>(r);
+    	root.dist=0;
+    	List<VertexAM<E>> theVertices = new ArrayList<>();
+    	theVertices.add(root);
+    	PriorityQueue<VertexAM<E>> q = new PriorityQueue<>(new PQComparator());
+    	vertexLookup.forEach(e->{
+    		if(theVertices.contains(new VertexAM<E>(e)))
+    		theVertices.add(new VertexAM<E>(e));
+    	});
+    	theVertices.forEach(e->{
+    		if(e!=root)
+    			e.dist=VertexAM.INFINITY;
+    		q.add(e);
+    	});
+    	while(!q.isEmpty()) {
+    		VertexAM<E> u = q.poll();
+    		for(E v:getAdjacentVertices(u.obj)) {
+    			VertexAM<E> tmp = getVertexFromList(theVertices,v);
+    			double alt =(double)tmp.dist+adj[vertex.get(u.obj)][vertex.get(v)];
+    			if(tmp.dist>alt) {
+    				tmp.dist=alt;
+		        	tmp.pre=u;
+		        	q.remove(tmp);
+		        	q.add(tmp);
+    			}
+    		}
+    	}
+    	return theVertices;
+    }
+    private VertexAM<E> getVertexFromList(List<VertexAM<E>> ls, E obj){
+    	VertexAM<E> tmp = null;
+    	for(VertexAM<E> v:ls) {
+    		tmp=(v.obj.equals(obj))?v:null;
+    	}
+    	return tmp;
+    }
     public void FloydWarshallSolver() {
     	double[][] dp;
     	double[][] next;
@@ -118,4 +157,13 @@ public class GraphAM<E> {
     }
     
     	
+}
+@SuppressWarnings("rawtypes")
+class PQComparator implements Comparator<VertexAM>{
+	@Override
+	public int compare(VertexAM o1, VertexAM o2) {
+		Double a1=o1.dist;
+		Double a2 = o2.dist;
+		return a2.compareTo(a1);
+	}
 }

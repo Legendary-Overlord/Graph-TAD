@@ -7,6 +7,7 @@ public class Vertex<E> {
 	E obj;
 	Vertex<E> pre;
 	double dist;
+	
 	public Vertex(E obj) {
 		this.obj = obj;
 		this.pre = null;
