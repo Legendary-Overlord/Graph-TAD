@@ -2,6 +2,7 @@ package v1;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -14,25 +15,65 @@ import java.util.Stack;
 public class Graph<E> {
 
 	private Map<Vertex<E>, List<Vertex<E>>> adjVertices;
+	private Map<Vertex<E>,Integer> vertexNum;  
+	private List<Edge<E>> edgeWeight;
+	private int gSize;
 
-	public Graph(Map<Vertex<E>, List<Vertex<E>>> adjVertices) {
-		this.adjVertices = adjVertices;
+	public Graph() {
+		this.adjVertices = new HashMap<>();
+		vertexNum = new HashMap<>();
+		edgeWeight = new ArrayList<>();
+		gSize=0;
 	}
 
 	public void addVertex(E e) {
-	    adjVertices.putIfAbsent(new Vertex<E>(e), new ArrayList<>());
+		Vertex<E> v= new Vertex<>(e);
+		if(!adjVertices.containsKey(v)) {
+			adjVertices.put(new Vertex<E>(e), new ArrayList<>());
+			vertexNum.putIfAbsent(v, gSize);
+			gSize++;
+		}
+	    
 	}
 
 	public void removeVertex(E obj) {
 	    Vertex<E> v = new Vertex<E>(obj);
 	    adjVertices.values().stream().forEach(e -> e.remove(v));
-	    adjVertices.remove(new Vertex<E>(obj));
+	    adjVertices.remove(v);
+	    int n = vertexNum.get(v);
+	    for(Map.Entry<Vertex<E>, Integer> x:vertexNum.entrySet()) {
+	    	if(x.getValue()>n)
+	    		x.setValue(x.getValue()-1);
+	    }
 	}
 	public void addEdge(E obj1, E obj2) {
 	    Vertex<E> v1 = new Vertex<E>(obj1);
 	    Vertex<E> v2 = new Vertex<E>(obj2);
 	    adjVertices.get(v1).add(v2);
 	    adjVertices.get(v2).add(v1);
+	    Edge<E> x = new Edge(v1,v2,1.0);
+	    if(!edgeWeight.contains(x))
+	    	edgeWeight.add(x);
+	}
+	public void addEdge(E obj1, E obj2, double w) {
+	    Vertex<E> v1 = new Vertex<E>(obj1);
+	    Vertex<E> v2 = new Vertex<E>(obj2);
+	    adjVertices.get(v1).add(v2);
+	    adjVertices.get(v2).add(v1);
+	    Edge<E> x = new Edge(v1,v2,w);
+	    if(!edgeWeight.contains(x))
+	    	edgeWeight.add(x);
+	}
+	public Edge<E> getEdge(Vertex<E>a,Vertex<E>b){
+		Edge<E> ans=null;
+		for(int i=0;i<edgeWeight.size();i++) {
+			Edge<E> temp=edgeWeight.get(i);
+			if(temp.a.equals(a)&&temp.b.equals(b)) {
+				ans=temp;
+				break;
+			}
+		}
+		return ans;
 	}
 	public void removeEdge(E obj1, E obj2) {
 	    Vertex<E> v1 = new Vertex<E>(obj1);
@@ -43,6 +84,9 @@ public class Graph<E> {
 	        eV1.remove(v2);
 	    if (eV2 != null)
 	        eV2.remove(v1);
+	    Edge<E> rm = getEdge(v1,v2);
+	    if(rm!=null)
+	    	edgeWeight.remove(rm);
 	}
 	public List<Vertex<E>> getAdjVertices(E e) {
 	    return adjVertices.get(new Vertex<E>(e));
@@ -98,25 +142,6 @@ public class Graph<E> {
 			lhs.add(a);
 		}
 	}
-//	private void resetVertexCalculations(Graph<E> graph, Vertex<E> root) {
-//		root.dist=0;
-//		root.pre=null;
-//		Set<Vertex<E>> visited = new LinkedHashSet<Vertex<E>>();
-//	    Queue<Vertex<E>> queue = new LinkedList<Vertex<E>>();
-//	    queue.add(root);
-//	    visited.add(root);
-//	    while (!queue.isEmpty()) {
-//	    	Vertex<E> Vertex = queue.poll();
-//	        for (Vertex<E> v : graph.getAdjVertices(Vertex.obj)) {
-//	            if (!visited.contains(v)) {
-//	            	v.dist=99999999;
-//	            	v.pre=null;
-//	                visited.add(v);
-//	                queue.add(v);
-//	            }
-//	        }
-//	    }
-//	}
 	private void resetVertices() {
 		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v : adjVertices.entrySet()) {
 			Vertex<E> vertex = v.getKey();
@@ -124,7 +149,7 @@ public class Graph<E> {
 			vertex.pre=null;
 		}
 	}
-	public void dijkstra(Graph<E> graph, Vertex<E> a, Vertex<E> b) {
+	public void dijkstra(Graph<E> graph, Vertex<E> a) {
 		a.dist=0;
 		PriorityQueue<Vertex<E>> Q = new PriorityQueue<>(new PQComparator());
 		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v: adjVertices.entrySet()) {
@@ -138,7 +163,7 @@ public class Graph<E> {
 		while(!Q.isEmpty()) {
 			Vertex<E> u = Q.poll();
 			 for (Vertex<E> v : graph.getAdjVertices(u.obj)) {
-		           double alt = v.dist; //+weight(u,v)
+		           double alt = v.dist+getEdge(u,v).weight;
 		           if(alt<v.dist) {
 		        	   v.dist=alt;
 		        	   v.pre=u;
@@ -148,8 +173,54 @@ public class Graph<E> {
 		        }
 		}
 	}
+	public double[][] floydWarshall() {
+		int v = adjVertices.size();
+		double[][] dist = new double[v][v];
+		for(int i=0;i<v;i++) {
+			for(int j=0;j<v;j++)
+				dist[i][j]=Vertex.INFINITY;
+		}
+		edgeWeight.forEach(e->{
+			dist[vertexNum.get(e.a)][vertexNum.get(e.b)]=e.weight;
+		});
+		//foreach dist[v][v]=0
+		for(int k=0;k<v;k++) {
+			for(int i=0;i<v;i++) {
+				for(int j=0;j<v;j++) {
+					if (dist[i][j]>(dist[i][k]+dist[k][j]))
+						dist[i][j]=dist[i][k]+dist[k][j];
+				}
+			}
+		}
+		return dist;
+	}
+	public void prim(Graph<E> g) {
+		PriorityQueue<Vertex<E>> q =new PriorityQueue<>(new PQComparator());
+		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v : adjVertices.entrySet()) {
+			Vertex<E> vertex = v.getKey();
+			vertex.dist=Vertex.INFINITY;
+			vertex.pre=null;
+			q.add(vertex);
+		}
+		Vertex<E> r = q.poll();
+		r.dist=0;
+		q.add(r);
+		while(!q.isEmpty()) {
+			Vertex<E> u = q.poll();
+			for (Vertex<E> v : g.getAdjVertices(u.obj)) {
+		           if(q.contains(v)&&(v.dist>getEdge(u,v).weight)) {
+		        	   v.dist=getEdge(u,v).weight;
+		        	   v.pre=u;
+		        	   q.remove(v);
+		        	   q.add(v);
+		           }
+		        }
+		}
+		
+	}
 
 }
+@SuppressWarnings("rawtypes")
 class PQComparator implements Comparator<Vertex>{
 	@Override
 	public int compare(Vertex o1, Vertex o2) {
