@@ -33,7 +33,6 @@ public class Graph<E> {
 			vertexNum.putIfAbsent(v, gSize);
 			gSize++;
 		}
-	    
 	}
 
 	public void removeVertex(E obj) {
