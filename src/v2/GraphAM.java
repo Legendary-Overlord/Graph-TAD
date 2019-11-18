@@ -166,6 +166,16 @@ public class GraphAM<E> {
 		}
 		return finalList;
 	}
+	
+	private double kruskal(List<EdgeAM<E>> weightEdge) {
+		double t = 0;
+		for(int i = 1; i <= weightEdge.size()-1; i++) {
+			  	t += weightEdge.get(i).weight;
+		}
+		return t;
+	}
+	
+	
 }
 
 
