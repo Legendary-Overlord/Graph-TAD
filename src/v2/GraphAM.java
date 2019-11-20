@@ -9,29 +9,24 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-import v1.Vertex;
-
-
-
 public class GraphAM<E> {
 
     //Maps vertex with its adjacency matrix index. O(1) to retrieve index of a vertex
     private Map<E, Integer> vertex;
     //To get vertex using index at O(1) time
     private List<E> vertexLookup;
-    
     private List<EdgeAM<E>> weightEdge;
-
     //adjacency matrix
     private int[][] adj;
-
     private int index;
-
-    public GraphAM(int numVertex) {
+    private boolean directed;
+    
+    public GraphAM(int numVertex, boolean directed) {
         adj = new int[numVertex][numVertex];
         index = 0;
         vertex = new HashMap<>();
         vertexLookup = new ArrayList<>();
+        this.directed=directed;
     }
 
      void addEdge(E from, E to) {
@@ -40,7 +35,9 @@ public class GraphAM<E> {
 
         int fromIndex = vertex.get(from);
         int toIndex = vertex.get(to);
+        if(!directed) {
         adj[fromIndex][toIndex] = 1;
+        }
     }
 
      void addVertex(E e) {
