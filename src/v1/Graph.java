@@ -18,12 +18,14 @@ public class Graph<E> {
 	private Map<Vertex<E>,Integer> vertexNum;  
 	private List<Edge<E>> edgeWeight;
 	private int gSize;
+	private boolean directed;
 
-	public Graph() {
+	public Graph(boolean directed) {
 		this.adjVertices = new HashMap<>();
 		vertexNum = new HashMap<>();
 		edgeWeight = new ArrayList<>();
 		gSize=0;
+		this.directed=directed;
 	}
 
 	public void addVertex(E e) {
@@ -53,6 +55,11 @@ public class Graph<E> {
 	    Edge<E> x = new Edge<>(v1,v2,1.0);
 	    if(!edgeWeight.contains(x))
 	    	edgeWeight.add(x);
+	    if(!directed) {
+	    	Edge<E> r = new Edge<>(v2,v1,1.0);
+	    	if(!edgeWeight.contains(r))
+		    	edgeWeight.add(r);
+	    }
 	}
 	public void addEdge(E obj1, E obj2, double w) {
 	    Vertex<E> v1 = new Vertex<E>(obj1);
@@ -62,6 +69,11 @@ public class Graph<E> {
 	    Edge<E> x = new Edge<>(v1,v2,w);
 	    if(!edgeWeight.contains(x))
 	    	edgeWeight.add(x);
+	    if(!directed) {
+	    	Edge<E> r = new Edge<>(v2,v1,w);
+	    	if(!edgeWeight.contains(r))
+		    	edgeWeight.add(r);
+	    }
 	}
 	public Edge<E> getEdge(Vertex<E>a,Vertex<E>b){
 		Edge<E> ans=null;
@@ -169,7 +181,11 @@ public class Graph<E> {
 		while(!Q.isEmpty()) {
 			Vertex<E> u = Q.poll();
 			 for (Vertex<E> v : graph.getAdjVertices(u.obj)) {
-		           double alt = v.dist+graph.getEdge(u,v).weight;
+				 Edge<E> x = graph.getEdge(u,v);
+				 double w=0;
+				 if(x!=null)
+					 w=x.weight;
+		           double alt = v.dist+w;
 		           if(alt<v.dist) {
 		        	   v.dist=alt;
 		        	   v.pre=u;
@@ -185,6 +201,9 @@ public class Graph<E> {
 		for(int i=0;i<v;i++) {
 			for(int j=0;j<v;j++)
 				dist[i][j]=Vertex.INFINITY;
+		}
+		for(int i = 0,j=0;i<v;i++,j++) {
+			dist[i][j]=0;
 		}
 		edgeWeight.forEach(e->{
 			dist[vertexNum.get(e.a)][vertexNum.get(e.b)]=e.weight;
@@ -215,8 +234,12 @@ public class Graph<E> {
 		while(!q.isEmpty()) {
 			Vertex<E> u = q.poll();
 			for (Vertex<E> v : g.getAdjVertices(u.obj)) {
-		           if(q.contains(v)&&(v.dist>g.getEdge(u,v).weight)) {
-		        	   v.dist=g.getEdge(u,v).weight;
+				Edge<E>x=g.getEdge(u, v);
+				double w=0;
+				if(x!=null)
+					w=x.weight;
+		           if(q.contains(v)&&(v.dist>w)) {
+		        	   v.dist=w;
 		        	   v.pre=u;
 		        	   q.remove(v);
 		        	   q.add(v);
