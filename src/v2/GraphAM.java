@@ -19,6 +19,8 @@ public class GraphAM<E> {
     private Map<E, Integer> vertex;
     //To get vertex using index at O(1) time
     private List<E> vertexLookup;
+    
+    private List<EdgeAM<E>> weightEdge;
 
     //adjacency matrix
     private int[][] adj;
@@ -154,10 +156,29 @@ public class GraphAM<E> {
             }
         }
         return result;
-    }
-    
-    	
+    }   	
+
+
+	private List<EdgeAM<E>> prim(List<EdgeAM<E>> weightEdge) {
+		List<EdgeAM<E>> finalList = null;
+		for(int i = 1; i <= 2; i++) {
+			finalList.add(weightEdge.get(i));  	
+		}
+		return finalList;
+	}
+	
+	private double kruskal(List<EdgeAM<E>> weightEdge) {
+		double t = 0;
+		for(int i = 1; i <= weightEdge.size()-1; i++) {
+			  	t += weightEdge.get(i).weight;
+		}
+		return t;
+	}
+	
+	
 }
+
+
 @SuppressWarnings("rawtypes")
 class PQComparator implements Comparator<VertexAM>{
 	@Override
