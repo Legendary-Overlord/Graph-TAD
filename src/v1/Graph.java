@@ -29,12 +29,10 @@ public class Graph<E> {
 	}
 
 	public void addVertex(E e) {
-		Vertex<E> v= new Vertex<>(e);
-		if(!adjVertices.containsKey(v)) {
-			adjVertices.put(new Vertex<E>(e), new ArrayList<>());
+			Vertex<E> v= new Vertex<>(e);
+			adjVertices.put(v, new ArrayList<>());
 			vertexNum.putIfAbsent(v, gSize);
 			gSize++;
-		}
 	}
 
 	public void removeVertex(E obj) {
@@ -47,9 +45,21 @@ public class Graph<E> {
 	    		x.setValue(x.getValue()-1);
 	    }
 	}
+	public Vertex<E> findVertex(E a){
+		Vertex<E>x=null;
+		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v : adjVertices.entrySet()) {
+			
+			E vertex = v.getKey().obj;
+			if(vertex==a) {
+				x=v.getKey();
+				break;
+			}
+		}
+		return x;
+	}
 	public void addEdge(E obj1, E obj2) {
-	    Vertex<E> v1 = new Vertex<E>(obj1);
-	    Vertex<E> v2 = new Vertex<E>(obj2);
+		Vertex<E> v1 = findVertex(obj1);
+	    Vertex<E> v2 = findVertex(obj2);
 	    adjVertices.get(v1).add(v2);
 	    adjVertices.get(v2).add(v1);
 	    Edge<E> x = new Edge<>(v1,v2,1.0);
@@ -62,17 +72,15 @@ public class Graph<E> {
 	    }
 	}
 	public void addEdge(E obj1, E obj2, double w) {
-	    Vertex<E> v1 = new Vertex<E>(obj1);
-	    Vertex<E> v2 = new Vertex<E>(obj2);
+		Vertex<E> v1 = findVertex(obj1);
+	    Vertex<E> v2 = findVertex(obj2);
 	    adjVertices.get(v1).add(v2);
 	    adjVertices.get(v2).add(v1);
 	    Edge<E> x = new Edge<>(v1,v2,w);
-	    if(!edgeWeight.contains(x))
-	    	edgeWeight.add(x);
+	    edgeWeight.add(x);
 	    if(!directed) {
 	    	Edge<E> r = new Edge<>(v2,v1,w);
-	    	if(!edgeWeight.contains(r))
-		    	edgeWeight.add(r);
+		    edgeWeight.add(r);
 	    }
 	}
 	public Edge<E> getEdge(Vertex<E>a,Vertex<E>b){
@@ -266,7 +274,7 @@ public class Graph<E> {
         //make x as parent of y
         parent[y_set_parent] = x_set_parent;
     }
-	public void kruskal(){
+	public ArrayList<Edge<E>> kruskal(){
         PriorityQueue<Edge<E>> pq = new PriorityQueue<>(adjVertices.size(), Comparator.comparingDouble(o -> o.weight));
 
         //add all the edges to priority queue, //sort the edges on weights
@@ -282,14 +290,15 @@ public class Graph<E> {
 
         //process vertices - 1 edges
         int index = 0;
-        while(index<gSize-1){
-            Edge<E> edge = pq.remove();
+        while((index<gSize-1)||!pq.isEmpty()){
+            Edge<E> edge = pq.poll();
             //check if adding this edge creates a cycle
-            int x_set = find(parent, vertexNum.get(edge.a));
-            int y_set = find(parent, vertexNum.get(edge.b));
+            int x_set = find(parent, vertexNum.get(findVertex(edge.a.obj)));
+            int y_set = find(parent, vertexNum.get(findVertex(edge.b.obj)));
 
             if(x_set==y_set){
                 //ignore, will create cycle
+            	index++;
             }else {
                 //add it to our final result
                 mst.add(edge);
@@ -298,8 +307,19 @@ public class Graph<E> {
             }
         }
         //print MST
-        System.out.println("Minimum Spanning Tree: ");
-        printMST(mst);
+//        System.out.println("Minimum Spanning Tree: ");
+//        printMST(mst);
+        int gNum=0;
+        int[] c = new int[gSize];
+        for(int i=0;i<gSize;i++){
+        	c[parent[i]]+=1;
+        }
+        for(int i=0;i<gSize;i++) {
+        	if(c[i]!=0)
+        		gNum++;
+        }
+        System.out.println(gNum);
+        return mst;
     }
 	   public void printMST(ArrayList<Edge<E>> edgeList){
            for (int i = 0; i <edgeList.size() ; i++) {
