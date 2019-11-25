@@ -215,6 +215,23 @@
       <Circle fx:id="greifswalderstr" fill="#eb984e" layoutX="817.0" layoutY="179.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="landsbergerAllee" fill="#eb984e" layoutX="858.0" layoutY="249.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="storkowerstr" fill="#eb984e" layoutX="858.0" layoutY="288.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="sonnenallee1" fill="#eb984e" layoutX="1019.0" layoutY="517.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="adlershof" fill="#eb984e" layoutX="983.0" layoutY="552.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="betriebsbahnhofSchöneweide" fill="#eb984e" layoutX="969.0" layoutY="535.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="schöneweide" fill="#eb984e" layoutX="942.0" layoutY="510.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="baumschulenweg" fill="#eb984e" layoutX="925.0" layoutY="492.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="köllnischeHeide" fill="#eb984e" layoutX="858.0" layoutY="488.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="spindlersfeld" fill="#eb984e" layoutX="1017.0" layoutY="518.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="oberspree" fill="#eb984e" layoutX="976.0" layoutY="517.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="grunewald" fill="#d868da" layoutX="176.0" layoutY="398.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="bellevue" fill="#d868da" layoutX="466.0" layoutY="269.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="hackescherMarkt" fill="#d868da" layoutX="632.0" layoutY="255.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ostbahnhof" fill="#d868da" layoutX="746.0" layoutY="325.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="nöldnerplatz" fill="#d868da" layoutX="899.0" layoutY="345.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="friedrichsfeldeOst" fill="#d868da" layoutX="961.0" layoutY="302.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="bhfSpringpfuhl" fill="#d868da" layoutX="985.0" layoutY="248.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="poelschaustr" fill="#d868da" layoutX="997.0" layoutY="216.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="savignyplatz" fill="#d868da" layoutX="364.0" layoutY="342.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="charlottenburg" fill="#d868da" layoutX="325.0" layoutY="342.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="plänterwald" fill="#4cc234" layoutX="886.0" layoutY="450.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </Pane>

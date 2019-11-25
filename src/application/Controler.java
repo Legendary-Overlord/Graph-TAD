@@ -579,9 +579,86 @@ public class Controler {
 
     @FXML
     private Circle storkowerstr;
+    //s45
+    @FXML
+    private Circle adlershof;
+
+    @FXML
+    private Circle betriebsbahnhofSchöneweide;
+
+    @FXML
+    private Circle schöneweide;
+
+    @FXML
+    private Circle baumschulenweg;
+
+    @FXML
+    private Circle köllnischeHeide;
+    //s47
+    @FXML
+    private Circle spindlersfeld;
+
+    @FXML
+    private Circle oberspree;
+    //S7
+    @FXML
+    private Circle grunewald;
+
+    @FXML
+    private Circle bellevue;
+
+    @FXML
+    private Circle hackescherMarkt;
+
+    @FXML
+    private Circle ostbahnhof;
+
+    @FXML
+    private Circle nöldnerplatz;
+
+    @FXML
+    private Circle friedrichsfeldeOst;
+
+    @FXML
+    private Circle bhfSpringpfuhl;
+
+    @FXML
+    private Circle poelschaustr;
+
+    @FXML
+    private Circle savignyplatz;
+
+    @FXML
+    private Circle charlottenburg;
+    //s47
+    @FXML
+    private Circle plänterwald;
+
 
 
     public void imprimirdatos(ActionEvent event) {
+    	System.out.println(plänterwald.getLayoutX() + " "+ plänterwald.getLayoutY());
+    	System.out.println("---------------");
+    	System.out.println(grunewald.getLayoutX() + " "+ grunewald.getLayoutY());
+        System.out.println(charlottenburg.getLayoutX() + " "+ charlottenburg.getLayoutY());
+        System.out.println(savignyplatz.getLayoutX() + " "+ savignyplatz.getLayoutY());
+        System.out.println(bellevue.getLayoutX() + " "+ bellevue.getLayoutY());
+        System.out.println(hackescherMarkt.getLayoutX() + " "+ hackescherMarkt.getLayoutY());
+        System.out.println(ostbahnhof.getLayoutX() + " "+ ostbahnhof.getLayoutY());
+        System.out.println(nöldnerplatz.getLayoutX() + " "+ nöldnerplatz.getLayoutY());
+        System.out.println(friedrichsfeldeOst.getLayoutX() + " "+ friedrichsfeldeOst.getLayoutY());
+        System.out.println(bhfSpringpfuhl.getLayoutX() + " "+ bhfSpringpfuhl.getLayoutY());
+        System.out.println(poelschaustr.getLayoutX() + " "+ poelschaustr.getLayoutY());
+    	System.out.println("---------------");
+    	System.out.println(spindlersfeld.getLayoutX() + " "+ spindlersfeld.getLayoutY());
+        System.out.println(oberspree.getLayoutX() + " "+ oberspree.getLayoutY());
+    	System.out.println("---------------");
+    	System.out.println(adlershof.getLayoutX() + " "+ adlershof.getLayoutY());
+        System.out.println(betriebsbahnhofSchöneweide.getLayoutX() + " "+ betriebsbahnhofSchöneweide.getLayoutY());
+        System.out.println(schöneweide.getLayoutX() + " "+ schöneweide.getLayoutY());
+        System.out.println(baumschulenweg.getLayoutX() + " "+ baumschulenweg.getLayoutY());
+        System.out.println(köllnischeHeide.getLayoutX() + " "+ köllnischeHeide.getLayoutY());
+    	System.out.println("---------------");
     	System.out.println(treptowerPark.getLayoutX() + " "+ treptowerPark.getLayoutY());
         System.out.println(sonnenallee.getLayoutX() + " "+ sonnenallee.getLayoutY());
         System.out.println(hermannstr.getLayoutX() + " "+ hermannstr.getLayoutY());
