@@ -169,7 +169,7 @@
       <Circle fx:id="berlinFeuerbachstr" fill="#f885eb" layoutX="428.0" layoutY="545.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="friedenau" fill="#f885eb" layoutX="454.0" layoutY="520.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="schoeneberg" fill="#f885eb" layoutX="490.0" layoutY="484.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="juliusLeberBrücke" fill="#f885eb" layoutX="513.0" layoutY="460.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="juliusLeberBruecke" fill="#f885eb" layoutX="513.0" layoutY="460.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="anhalterBhf" fill="#f885eb" layoutX="550.0" layoutY="346.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="oranienburgerstr" fill="#f885eb" layoutX="594.0" layoutY="218.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="nordbahnhof" fill="#f885eb" layoutX="594.0" layoutY="202.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />

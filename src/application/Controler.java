@@ -479,7 +479,7 @@ public class Controler {
 	    private Circle schoeneberg;
 
 	    @FXML
-	    private Circle juliusLeberBrücke;
+	    private Circle juliusLeberBruecke;
 
 	    @FXML
 	    private Circle anhalterBhf;
@@ -682,7 +682,7 @@ public class Controler {
         System.out.println(berlinFeuerbachstr.getLayoutX() + " "+ berlinFeuerbachstr.getLayoutY());
         System.out.println(friedenau.getLayoutX() + " "+ friedenau.getLayoutY());
         System.out.println(schoeneberg.getLayoutX() + " "+ schoeneberg.getLayoutY());
-        System.out.println(juliusLeberBrücke.getLayoutX() + " "+ juliusLeberBrücke.getLayoutY());
+        System.out.println(juliusLeberBruecke.getLayoutX() + " "+ juliusLeberBruecke.getLayoutY());
         System.out.println(anhalterBhf.getLayoutX() + " "+ anhalterBhf.getLayoutY());
         System.out.println(oranienburgerstr.getLayoutX() + " "+ oranienburgerstr.getLayoutY());
         System.out.println(nordbahnhof.getLayoutX() + " "+ nordbahnhof.getLayoutY());
