@@ -13,6 +13,11 @@ public class Vertex<E> {
 		this.pre = null;
 		this.dist = INFINITY;
 	}
+
+	@Override
+	public String toString() {
+		return "Vertex [obj=" + obj.toString() + ", pre=" + pre + ", dist=" + dist + "]";
+	}
 	
 	
 
