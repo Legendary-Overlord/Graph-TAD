@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Station {
@@ -9,12 +10,11 @@ public class Station {
 	private String name;
 	private List<String> Lines;
 	
-	public Station(float x, float y, String name, List<String> lines) {
-		super();
+	public Station(float x, float y, String name) {
 		this.x = x;
 		this.y = y;
 		this.name = name;
-		Lines = lines;
+		Lines = new ArrayList<>();
 	}
 	public float getX() {
 		return x;
@@ -33,6 +33,9 @@ public class Station {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public void addLine(String line) {
+		Lines.add(line);
 	}
 	public List<String> getLines() {
 		return Lines;

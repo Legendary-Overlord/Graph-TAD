@@ -1,0 +1,344 @@
+Station,U-Line,X-Pos,Y-Pos,Dist
+Biesdorf-Süd,U5,1005,346,0
+Tierpark,U5,983,346,2
+Friedrichsfelde,U5,942,323,2
+Lichtenberg ,U5,918,323,3
+Magdalenenstr.,U5,886,323,1
+Frankfurter Allee ,U5,858,323,2
+Samarieterstraße,U5,804,317,2
+Frankfurter Tor,U5,793,306,1
+Weberwiese,U5,782,295,1
+Strausberger Platz,U5,772,283,2
+Schillingstr.,U5,761,271,1
+Alexanderplatz ,U5,706,271,2
+Uhlandstr.,U1,375,372,0
+Kurfürstendamm,U1,395,372,1
+Wittenbergplatz,U1,453,372,1
+Nollendorfplatz,U1,479,372,2
+Kurfürstenstr,U1,496,372,2
+Gleisdreieck,U1,520,372,2
+Möckernbrücke,U1,580,372,1
+Hallesches Tor,U1,615,372,2
+Prinzenstr.,U1,661,372,2
+Kottbusser Tor,U1,718,372,2
+Görlitzer Bahnhof,U1,738,372,1
+Schlesisches Tor,U1,752,363,2
+Warchauer Str.,U1,768,346,2
+Ruhleben,U2,157,240,0
+Olympia-Stadion,U2,183,265,2
+New-Westend,U2,202,283,1
+Theodor-Heuss-Platz,U2,227,304,2
+Kaiserdamm Station,U2,269,304,2
+Sophie-Charlotte-Platz,U2,307,304,1
+Bismarckstr.,U2,332,304,2
+Deutsche Oper,U2,351,304,1
+Ernst-Reuter-Platz,U2,376,313,2
+Berlin Zoologischer Garten,U2,402,339,2
+Wittenbergplatz,U2,453,372,3
+Nollendorfplatz,U2,479,372,1
+Bülwstr.,U2,503,372,2
+Gleisdreieck,U2,520,372,2
+Mendelssohn-Bartholdy-Park,U2,531,339,1
+Potsdamer Platz,U2,549,324,2
+Mohrenstr.,U2,581,324,1
+Stadtmitte,U2,622,324,1
+Hausvogteiplatz,U2,638,324,2
+Spittelmarkt,U2,668,324,1
+Märkisches Museum,U2,692,318,1
+Klosterstr.,U2,706,304,2
+Alexanderplatz ,U2,706,271,2
+Rosa-Luxemburg-Platz,U2,678,225,2
+Senefelderplatz,U2,678,203,1
+Eberswalder str.,U2,678,186,2
+Schönhauser Allee,U2,678,163,2
+Vinetastr.,U2,678,115,3
+Pankow,U2,678,82,1
+Nollendorfplatz,U3,479,372,0
+Wittenbergplatz,U3,453,372,2
+Augsburger str.,U3,412,395,2
+Spichernstr.,U3,395,410,1
+Hohenzollernplatz,U3,375,429,2
+Fehrbelliner Platz,U3,361,443,2
+Heidelberger Platz,U3,321,484,2
+Rüdesheimer Platz,U3,307,498,1
+Breitenbachplatz,U3,293,512,2
+Podbielskiallee,U3,282,524,1
+Dahlern-Dorf,U3,268,538,2
+Freie Universität,U3,254,552,2
+Oskar-Helene-Heim,U3,241,565,1
+Onkel Toms Hütte,U3,229,577,2
+Krumme Lanke,U3,218,589,2
+Nollendorfplatz,U4,479,372,0
+Viktoria-Luise-Platz,U4,457,412,2
+Bayerischer Platz,U4,457,447,1
+Rathaus Schöneberg,U4,457,466,2
+Innsbrucker Platz,U4,457,482,1
+Otisstr.,U6,375,40,0
+Scharnweberstr.,U6,388,54,2
+Kurt-Schumacher-Platz,U6,402,68,1
+Afrikanische str.,U6,417,83,2
+Rehberge,U6,428,96,1
+Seestr.,U6,447,113,2
+Leopoldplatz,U6,468,135,1
+Wedding,U6,496,163,1
+Reinickendorfer str.,U6,510,179,1
+Schwartzkopffstr.,U6,528,194,2
+Naturkundenmuseum,U6,550,216,1
+Oranienburger Tor,U6,572,235,1
+Friedrichstr.,U6,587,256,2
+Französische str.,U6,615,306,1
+Stadtmitte,U6,622,324,1
+Kochstr.Checkpoint Charlie,U6,615,353,1
+Hallesches Tor,U6,615,372,2
+Mehringdamm,U6,615,405,2
+Platz der Luftbrücke,U6,615,436,2
+Paradestr.,U6,615,459,1
+Berlin-Tempelhof,U6,615,484,2
+Alt-Tempelhof,U6,615,498,1
+Kaiserin-Augusta-str.,U6,615,513,1
+Ullsteinstr.,U6,615,528,1
+Westphalweg,U6,615,543,2
+Alt-Mariendorf,U6,615,558,1
+Berlin Hbf,U55,517,256,0
+Bundestag,U55,527,276,1
+Brandenburger Tor,U55,549,297,1
+Altstadt Spandau,U7,97,179,0
+Zitadelle,U7,122,164,1
+Paulsternstr.,U7,190,164,2
+Rohrdamm,U7,234,164,2
+Siemensdamm,U7,261,165,1
+Halemweg,U7,293,165,2
+Jakob-Kaiser-Platz,U7,307,172,1
+Jungfernheide,U7,320,186,1
+Mierendorffplatz,U7,332,232,2
+Richard-Wagner-Platz,U7,332,271,1
+Bismarckstr.,U7,332,304,2
+Wilmersdorfer str.,U7,332,232,3
+Adenauerplatz,U7,332,271,1
+Konstanzer str.,U7,328,332,1
+Fehrbelliner Platz,U7,361,443,1
+Blissestr.,U7,376,447,2
+Berliner str.,U7,332,447,1
+Bayerischer Platz,U7,457,447,1
+Eisenacher str.,U7,395,447,2
+Kleistpark,U7,479,447,1
+Yorckstr.,U7,504,445,1
+Möckernbrücke,U7,580,372,1
+Mehringdamm,U7,615,405,2
+Gneissenaustr.,U7,550,429,2
+Südstern,U7,685,417,1
+Hermannplatz,U7,718,417,2
+Rathaus Neukölln,U7,759,436,2
+Karl-Marx-str.,U7,772,452,1
+Berlin-Neukölln,U7,772,484,2
+Grenzallee,U7,772,503,1
+Blaschkoallee,U7,772,521,2
+Parchimer Allee,U7,772,543,1
+Britz-Süd,U7,772,565,2
+Johannisthaler Chaussee,U7,772,584,1
+Lindauer Allee,U8,472,40,0
+Paracelsus-Bad,U8,483,52,1
+Residenzstr.,U8,493,63,1
+Franz-Neumann-Platz,U8,504,75,2
+Osloer str.,U8,517,88,2
+Pankstr.,U8,555,124,1
+Berlin-Gesundbrunnen,U8,594,163,2
+Voltastr.,U8,609,179,1
+Bernauer str.,U8,624,194,2
+Rosenthaler Platz,U8,645,216,1
+Weinmeisterstr.,U8,661,233,2
+Alexanderplatz ,U8,706,271,2
+Jannowitzbrücke,U8,729,305,1
+Heinrich-Heine-str.,U8,718,332,2
+Moritzplatz,U8,718,353,1
+Kottbusser Tor,U8,718,372,2
+Schönleinstr.,U8,718,395,2
+Hermannplatz,U8,718,417,2
+Boddinstr.,U8,718,438,1
+Leinestr.,U8,CERRADA en u8,CERRADA en u8,2
+Hermannstr.,U8,cerrada en u8,cerrada en u8,1
+Nauener Platz,U9,490,113,0
+Leopoldplatz,U9,468,135,2
+Amrumer str.,U9,459,143,1
+Westhafen,U9,446,201,2
+Birkenstr.,U9,446,165,1
+Turmstr.,U9,446,232,1
+Hansaplatz,U9,446,307,2
+Berlin Zoologischer Garten,U9,402,339,4
+Kurfürstendamm,U9,395,372,1
+Spichernstr.,U9,395,410,1
+Güntzelstr.,U9,395,429,1
+Berliner str.,U9,395,447,2
+Bundesplatz,U9,395,484,1
+Friedrich-Wilhelm-Platz,U9,395,512,2
+Walther-Schreiber-Platz,U9,395,531,1
+Schlossstr.,U9,395,552,1
+Rathaus Steglitz,U9,395,577,1
+Botanischer Garten,S1,375,596,2
+Rathaus Steglitz,S1,395,577,2
+Berlin Feuerbachstr.,S1,428,545,2
+Friedenau,S1,454,520,2
+Schöneberg,S1,490,484,2
+Julius-Leber-Brücke,S1,513,460,2
+Yorckstr.,S1,504,445,2
+Anhalter Bhf,S1,549,346,3
+Potsdamer Platz,S1,549,324,2
+Brandenburger Tor,S1,549,297,2
+Friedrichstr.,S1,587,256,4
+Oranienburger str.,S1,594,218,2
+Nordbahnhof,S1,594,202,2
+Humboldthain,S1,594,185,2
+Berlin-Gesundbrunnen,S1,594,163,8
+Bornholmer str.,S1,617,124,2
+Wollankstr.,S1,588,90,2
+Marienfelde,S2,588,596,0
+Attilastr.,S2,565,572,3
+Priesterweg,S2,550,545,3
+Südkreuz,S2,550,484,2
+Yorckstr.,S2,504,445,3
+Anhalter Bhf,S2,549,346,3
+Potsdamer Platz,S2,549,324,2
+Brandenburger Tor,S2,549,297,2
+Friedrichstr.,S2,587,256,2
+Oranienburger str.,S2,594,218,2
+Nordbahnhof,S2,594,202,2
+Humboldthain,S2,594,185,2
+Berlin-Gesundbrunnen,S2,594,163,2
+Bornholmer str.,S2,617,124,2
+Pankow,S2,678,82,3
+Pankow-Heinersdorf,S2,706,45,2
+Lankwitz,S25,510,596,0
+Südende,S25,531,577,2
+Priesterweg,S25,550,545,3
+Südkreuz,S25,550,484,2
+Yorckstr.,S25,504,445,3
+Anhalter Bhf,S25,549,346,3
+Potsdamer Platz,S25,549,324,2
+Brandenburger Tor,S25,549,297,2
+Friedrichstr.,S25,587,256,2
+Oranienburger str.,S25,594,218,2
+Nordbahnhof,S25,594,202,2
+Humboldthain,S25,594,185,3
+Berlin-Gesundbrunnen,S25,594,163,2
+Bornholmer str.,S25,617,124,2
+Wollankstr.,S25,588,90,2
+Wuhlheide,S3,1019,405,0
+Karlshorst,S3,969,398,3
+Betriebsbahnhof Rummelsburg,S3,918,382,3
+Rummelsburg Bhf,S3,900,363,2
+Ostkreuz,S3,858,353,2
+Ostkreuz,"S41,S42",858,353,0
+Treptower Park,"S41,S42",858,405,7
+Sonnenallee,"S41,S42",817,461,2
+Berlin-Neukölln,"S41,S42",772,484,2
+Hermannstr.,"S41,S42",718,484,1
+Berlin-Tempelhof,"S41,S42",615,484,4
+Südkreuz,"S41,S42",550,484,3
+Schöneberg,"S41,S42",490,484,2
+Innsbrucker Platz,"S41,S42",457,482,1
+Bundesplatz,"S41,S42",395,484,2
+Heidelberger Platz,"S41,S42",321,484,2
+Hohenzollerndamm,"S41,S42",282,445,2
+Halensee,"S41,S42",275,376,1
+Westkreuz,"S41,S42",275,339,2
+Messe Nord/ICC,"S41,S42",,,2
+Westend,"S41,S42",275,249,1
+Jungfernheide,"S41,S42",320,186,3
+Beusselstr.,"S41,S42",388,165,2
+Westhafen,"S41,S42",446,201,2
+Wedding,"S41,S42",496,163,3
+Berlin-Gesundbrunnen,"S41,S42",594,163,4
+Schönhauser Allee,"S41,S42",678,163,2
+Prenzlauer Allee,"S41,S42",772,163,1
+Greifswalder str.,"S41,S42",817,179,2
+Landsberger Allee,"S41,S42",858,249,2
+Storkower str.,"S41,S42",858,288,2
+Frankfurter Allee,"S41,S42",858,323,2
+Ostkreuz,"S41,S42",858,353,2
+Adlershof,S45,983,552,0
+Betriebsbahnhof Schöneweide,S45,969,535,2
+Schöneweide,S45,942,510,3
+Baumschulenweg,S45,925,492,3
+Köllnische Heide,S45,858,488,5
+Berlin-Neukölln,S45,772,484,2
+Hermannstr.,S45,718,484,2
+Berlin-Tempelhof,S45,615,484,4
+Südkreuz,S45,550,484,2
+Adlershof,S46,983,552,0
+Betriebsbahnhof Schöneweide,S46,969,535,2
+Schöneweide,S46,942,510,3
+Baumschulenweg,S46,925,492,3
+Köllnische Heide,S46,858,488,5
+Berlin-Neukölln,S46,772,484,2
+Hermannstr.,S46,718,484,2
+Berlin-Tempelhof,S46,615,484,4
+Südkreuz,S46,550,484,2
+Schöneberg,S46,490,484,2
+Innsbrucker Platz,S46,457,482,2
+Bundesplatz,S46,395,484,2
+Heidelberger Platz,S46,321,484,2
+Hohenzollerndamm,S46,282,445,2
+Halensee,S46,275,376,2
+Westkreuz,S46,275,339,1
+Messe Nord/ICC,S46,,,2
+Westend,S46,275,249,1
+Spindlersfeld,S47,1017,518,0
+Oberspree,S47,976,517,3
+Schöneweide,S47,942,510,4
+Baumschulenweg,S47,925,492,3
+Köllnische Heide,S47,858,488,5
+Berlin-Neukölln,S47,772,484,2
+Hermannstr.,S47,718,484,1
+Poelschaustr.,S7,997,216,0
+Bhf Springpfuhl,S7,985,248,2
+Friedrichsfelde Ost,S7,961,302,3
+Lichtenberg,S7,918,323,2
+Nöldnerplatz,S7,899,345,2
+Ostkreuz,S7,858,353,3
+Warschauer str.,S7,768,346,2
+Ostbahnhof,S7,746,325,3
+Jannowitzbrücke,S7,729,305,2
+Alexanderplatz ,S7,706,271,2
+Hackescher Markt,S7,632,255,2
+Friedrichstr.,S7,587,256,2
+Berlin Hbf,S7,517,256,3
+Bellevue,S7,466,269,2
+Berlin Zoologischer Garten,S7,402,339,2
+Savignyplatz,S7,364,342,2
+Charlottenburg,S7,325,342,2
+Westkreuz,S7,275,339,3
+Grunewald,S7,176,398,3
+Bhf Springpfuhl,S75,985,248,0
+Friedrichsfelde Ost,S75,961,302,3
+Lichtenberg,S75,918,323,2
+Adlershof,S8,983,552,0
+Betriebsbahnhof Schöneweide,S8,969,535,2
+Schöneweide,S8,942,510,3
+Baumschulenweg,S8,925,492,3
+Plänterwald,S8,886,450,3
+Treptower Park,S8,858,405,3
+Ostkreuz,S8,858,353,2
+Frankfurter Allee,S8,858,323,2
+Storkower str.,S8,858,288,2
+Landsberger Allee,S8,858,249,2
+Greifswalder str.,S8,817,179,3
+Prenzlauer Allee,S8,772,163,2
+Schönhauser Allee,S8,678,163,2
+Bornholmer str.,S8,617,124,4
+Pankow,S8,678,82,2
+Pankow-Heinersdorf,S8,706,45,2
+Adlershof,S85,983,552,0
+Betriebsbahnhof Schöneweide,S85,969,535,2
+Schöneweide,S85,942,510,3
+Baumschulenweg,S85,925,492,3
+Plänterwald,S85,886,450,2
+Treptower Park,S85,858,405,3
+Ostkreuz,S85,858,353,2
+Frankfurter Allee,S85,858,323,2
+Storkower str.,S85,858,288,2
+Landsberger Allee,S85,858,249,2
+Greifswalder str.,S85,817,179,3
+Prenzlauer Allee,S85,772,163,2
+Schönhauser Allee,S85,678,163,2
+Bornholmer str.,S85,617,124,5
+Pankow,S85,678,82,2
