@@ -43,5 +43,9 @@ public class Station {
 	public void setLines(List<String> lines) {
 		Lines = lines;
 	}
+	@Override
+	public String toString() {
+		return "Station [x=" + x + ", y=" + y + ", name=" + name + ", Lines=" + Lines + "]";
+	}
 
 }

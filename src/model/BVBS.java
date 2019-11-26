@@ -5,8 +5,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Set;
 
 import v1.Graph;
+import v1.Vertex;
 
 public class BVBS {
 	
@@ -69,6 +71,18 @@ public class BVBS {
 			}
 		}
 		return x;
+	}
+	public Set<Vertex<Station>> findPathBFS(String rootStation, String destination){
+		Station origin = findStation(sts,rootStation);
+		Station dest = findStation(sts,destination);
+		graph.breadthFirstSearch(graph, graph.findVertex(origin));
+		return graph.printPath(graph, graph.findVertex(origin), graph.findVertex(dest));
+	}
+	public Set<Vertex<Station>> findPathDijkstra(String rootStation, String destination){
+		Station origin = findStation(sts,rootStation);
+		Station dest = findStation(sts,destination);
+		graph.dijkstra(graph, graph.findVertex(origin));
+		return graph.printPath(graph, graph.findVertex(origin), graph.findVertex(dest));
 	}
 	
 	
