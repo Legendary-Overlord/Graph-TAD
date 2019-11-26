@@ -13,19 +13,18 @@
             <Image url="@../../Mapa_Berlin.png" />
          </image>
       </ImageView>
-      <Circle fx:id="chill" fill="#824201" layoutX="761.0" layoutY="271.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="schillingstr" fill="#824201" layoutX="761.0" layoutY="271.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Button fx:id="b" layoutX="866.0" layoutY="634.0" mnemonicParsing="false" onAction="#imprimirdatos" text="Button" />
-      <Circle fx:id="stra" fill="#804000" layoutX="772.0" layoutY="283.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="weber" fill="#804000" layoutX="782.0" layoutY="295.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="frankTor" fill="#804000" layoutX="793.0" layoutY="306.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="frankfur" fill="#804000" layoutX="858.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="magda" fill="#804000" layoutX="886.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="lichst" fill="#804000" layoutX="918.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="fried" fill="#804000" layoutX="942.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="tier" fill="#804000" layoutX="983.0" layoutY="346.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="biel" fill="#804000" layoutX="1005.0" layoutY="346.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="els" fill="#804000" layoutX="1026.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="samar" fill="#804000" layoutX="804.0" layoutY="317.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="strausbergerPlatz" fill="#804000" layoutX="772.0" layoutY="283.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="weberwiese" fill="#804000" layoutX="782.0" layoutY="295.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="frankfurterTor" fill="#804000" layoutX="793.0" layoutY="306.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="frankfurterAlle" fill="#804000" layoutX="858.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="magdalenenstr" fill="#804000" layoutX="886.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="lichtenberg" fill="#804000" layoutX="918.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="friedrichsfelde" fill="#804000" layoutX="942.0" layoutY="323.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="tierpark" fill="#804000" layoutX="983.0" layoutY="346.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="biesdorfSued" fill="#804000" layoutX="1005.0" layoutY="346.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="samarieterstr" fill="#804000" layoutX="804.0" layoutY="317.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="warchauerStr" fill="#1fff4a" layoutX="768.0" layoutY="346.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="schlesischesTor" fill="#1fff4a" layoutX="752.0" layoutY="363.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="goerlitzerBahnhof" fill="#1fff4a" layoutX="738.0" layoutY="372.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
