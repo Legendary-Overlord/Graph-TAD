@@ -9,635 +9,626 @@ import javafx.scene.shape.Circle;
 public class Controler {
 	
 	//U5
-	@FXML
-    private Circle alexan;
+	  @FXML
+	    private Circle chill;
 
-    @FXML
-    private Circle chill;
-    
-    @FXML
-    private Circle stra;
 
-    @FXML
-    private Circle weber;
+	    @FXML
+	    private Circle stra;
 
-    @FXML
-    private Circle frankTor;
+	    @FXML
+	    private Circle weber;
 
-    @FXML
-    private Circle samar;
+	    @FXML
+	    private Circle frankTor;
 
-    @FXML
-    private Circle frankfur;
+	    @FXML
+	    private Circle frankfur;
 
-    @FXML
-    private Circle magda;
+	    @FXML
+	    private Circle magda;
 
-    @FXML
-    private Circle lichst;
+	    @FXML
+	    private Circle lichst;
 
-    @FXML
-    private Circle fried;
+	    @FXML
+	    private Circle fried;
 
-    @FXML
-    private Circle tier;
+	    @FXML
+	    private Circle tier;
 
-    @FXML
-    private Circle biel;
+	    @FXML
+	    private Circle biel;
 
-    @FXML
-    private Circle els;
-    
-    //U1
-    @FXML
-    private Circle warchauerStr;
+	    @FXML
+	    private Circle els;
 
-    @FXML
-    private Circle schlesischesTor;
+	    @FXML
+	    private Circle samar;
 
-    @FXML
-    private Circle görlitzerBahnhof;
+	    @FXML
+	    private Circle warchauerStr;
 
-    @FXML
-    private Circle kottbusserTor;
+	    @FXML
+	    private Circle schlesischesTor;
 
-    @FXML
-    private Circle prinzenstr;
+	    @FXML
+	    private Circle goerlitzerBahnhof;
 
-    @FXML
-    private Circle halleschesTor;
+	    @FXML
+	    private Circle kottbusserTor;
 
-    @FXML
-    private Circle möckernbrücke;
+	    @FXML
+	    private Circle prinzenstr;
 
-    @FXML
-    private Circle gleisdreieck;
+	    @FXML
+	    private Circle halleschesTor;
 
-    @FXML
-    private Circle kurfürstenstr;
+	    @FXML
+	    private Circle moeckernbruecke;
 
-    @FXML
-    private Circle nollendorfplatz;
+	    @FXML
+	    private Circle gleisdreieck;
 
-    @FXML
-    private Circle wittenbergplatz;
+	    @FXML
+	    private Circle kurfuerstenstr;
 
-    @FXML
-    private Circle kurfürstendamm;
+	    @FXML
+	    private Circle nollendorfplatz;
 
-    @FXML
-    private Circle uhlandstr;
-    
-    //U3
-    @FXML
-    private Circle krummeLanke;
+	    @FXML
+	    private Circle wittenbergplatz;
 
-    @FXML
-    private Circle onkelTomsHütte;
+	    @FXML
+	    private Circle kurfuerstendamm;
 
-    @FXML
-    private Circle freieUniversität;
+	    @FXML
+	    private Circle uhlandstr;
 
-    @FXML
-    private Circle oskarHeleneHeim;
+	    @FXML
+	    private Circle krummeLanke;
 
-    @FXML
-    private Circle dahlernDorf;
+	    @FXML
+	    private Circle onkelTomsHuette;
 
-    @FXML
-    private Circle Podbielskiallee;
+	    @FXML
+	    private Circle freieUniversitaet;
 
-    @FXML
-    private Circle heidelbergerPlatz;
+	    @FXML
+	    private Circle oskarHeleneHeim;
 
-    @FXML
-    private Circle rüdesheimerPlatz;
+	    @FXML
+	    private Circle dahlernDorf;
+	    
+	    @FXML
+	    private Circle buelwstr;
 
-    @FXML
-    private Circle breitenbachplatz;
+	    @FXML
+	    private Circle Podbielskiallee;
 
-    @FXML
-    private Circle fehrbellinerPlatz;
+	    @FXML
+	    private Circle heidelbergerPlatz;
 
-    @FXML
-    private Circle hohenzollernplatz;
+	    @FXML
+	    private Circle ruedesheimerPlatz;
 
-    @FXML
-    private Circle spichernstr;
+	    @FXML
+	    private Circle breitenbachplatz;
 
-    @FXML
-    private Circle augsburgerStr;
-    
-    //U4
-    @FXML
-    private Circle innsbruckerPlatz;
+	    @FXML
+	    private Circle fehrbellinerPlatz;
 
-    @FXML
-    private Circle rathausSchöneberg;
+	    @FXML
+	    private Circle hohenzollernplatz;
 
-    @FXML
-    private Circle bayerischerPlatz;
+	    @FXML
+	    private Circle spichernstr;
 
-    @FXML
-    private Circle viktoriaLuisePlatz;
-    
-    //U2
-    @FXML
-    private Circle ruhleben;
+	    @FXML
+	    private Circle augsburgerStr;
 
-    @FXML
-    private Circle olympiaStadion;
+	    @FXML
+	    private Circle innsbruckerPlatz;
 
-    @FXML
-    private Circle newWestend;
+	    @FXML
+	    private Circle rathausSchoeneberg;
 
-    @FXML
-    private Circle theodorHeussPlatz;
+	    @FXML
+	    private Circle bayerischerPlatz;
 
-    @FXML
-    private Circle kaiserdammStation;
+	    @FXML
+	    private Circle viktoriaLuisePlatz;
 
-    @FXML
-    private Circle sophieCharlottePlatz;
+	    @FXML
+	    private Circle ruhleben;
 
-    @FXML
-    private Circle bismarckstr;
+	    @FXML
+	    private Circle olympiaStadion;
 
-    @FXML
-    private Circle deutscheOper;
+	    @FXML
+	    private Circle newWestend;
 
-    @FXML
-    private Circle ernstReuterPlatz;
+	    @FXML
+	    private Circle theodorHeussPlatz;
 
-    @FXML
-    private Circle berlinZoologischerGarten;
+	    @FXML
+	    private Circle kaiserdammStation;
 
-    @FXML
-    private Circle bülwstr;
+	    @FXML
+	    private Circle sophieCharlottePlatz;
 
-    @FXML
-    private Circle mendelssohnBartholdyPark;
+	    @FXML
+	    private Circle bismarckstr;
 
-    @FXML
-    private Circle potsdamerPlatz;
+	    @FXML
+	    private Circle deutscheOper;
 
-    @FXML
-    private Circle mohrenstr;
+	    @FXML
+	    private Circle ernstReuterPlatz;
 
-    @FXML
-    private Circle stadtmitte;
+	    @FXML
+	    private Circle berlinZoologischerGarten;
 
-    @FXML
-    private Circle hausvogteiplatz;
+	    @FXML
+	    private Circle mendelssohnBartholdyPark;
 
-    @FXML
-    private Circle spittelmarkt;
+	    @FXML
+	    private Circle potsdamerPlatz;
 
-    @FXML
-    private Circle märkischesMuseum;
+	    @FXML
+	    private Circle mohrenstr;
 
-    @FXML
-    private Circle klosterstr;
+	    @FXML
+	    private Circle hausvogteiplatz;
 
-    @FXML
-    private Circle alexand;
+	    @FXML
+	    private Circle spittelmarkt;
 
-    @FXML
-    private Circle rosaLuxemburgPlatz;
+	    @FXML
+	    private Circle maerkischesMuseum;
 
-    @FXML
-    private Circle senefelderplatz;
+	    @FXML
+	    private Circle klosterstr;
 
-    @FXML
-    private Circle schönhauserAllee;
+	    @FXML
+	    private Circle alexanderPlatz;
 
-    @FXML
-    private Circle eberswalderstr;
+	    @FXML
+	    private Circle rosaLuxemburgPlatz;
 
-    @FXML
-    private Circle vinetastr;
+	    @FXML
+	    private Circle senefelderplatz;
 
-    @FXML
-    private Circle pankow;
-    
-    //u6
-    @FXML
-    private Circle altMariendorf;
+	    @FXML
+	    private Circle schoenhauserAllee;
 
-    @FXML
-    private Circle westphalweg;
+	    @FXML
+	    private Circle eberswalderstr;
 
-    @FXML
-    private Circle ullsteinstr;
+	    @FXML
+	    private Circle vinetastr;
 
-    @FXML
-    private Circle kaiserinAugustastr;
+	    @FXML
+	    private Circle pankow;
 
-    @FXML
-    private Circle altTempelhof;
+	    @FXML
+	    private Circle altMariendorf;
 
-    @FXML
-    private Circle berlinTempelhof;
+	    @FXML
+	    private Circle westphalweg;
 
-    @FXML
-    private Circle paradestr;
+	    @FXML
+	    private Circle ullsteinstr;
 
-    @FXML
-    private Circle platzderLuftbrücke;
+	    @FXML
+	    private Circle kaiserinAugustastr;
 
-    @FXML
-    private Circle mehringdamm;
+	    @FXML
+	    private Circle altTempelhof;
 
-    @FXML
-    private Circle kochstrCheckpointCharlie;
+	    @FXML
+	    private Circle berlinTempelhof;
 
-    @FXML
-    private Circle französischestr;
+	    @FXML
+	    private Circle paradestr;
 
-    @FXML
-    private Circle friedrichstr;
+	    @FXML
+	    private Circle platzderLuftbruecke;
 
-    @FXML
-    private Circle naturkundenmuseum;
+	    @FXML
+	    private Circle mehringdamm;
 
-    @FXML
-    private Circle oranienburgerTor;
+	    @FXML
+	    private Circle kochstrCheckpointCharlie;
 
-    @FXML
-    private Circle schwartzkopffstr;
+	    @FXML
+	    private Circle stadtmitte;
 
-    @FXML
-    private Circle reinickendorferstr;
+	    @FXML
+	    private Circle franzoesischestr;
 
-    @FXML
-    private Circle wedding;
+	    @FXML
+	    private Circle friedrichstr;
 
-    @FXML
-    private Circle leopoldplatz;
+	    @FXML
+	    private Circle naturkundenmuseum;
 
-    @FXML
-    private Circle seestr;
+	    @FXML
+	    private Circle oranienburgerTor;
 
-    @FXML
-    private Circle rehberge;
+	    @FXML
+	    private Circle schwartzkopffstr;
 
-    @FXML
-    private Circle afrikanischestr;
+	    @FXML
+	    private Circle reinickendorferstr;
 
-    @FXML
-    private Circle kurtSchumacherPlatz;
+	    @FXML
+	    private Circle wedding;
 
-    @FXML
-    private Circle scharnweberstr;
+	    @FXML
+	    private Circle leopoldplatz;
 
-    @FXML
-    private Circle otisstr;
-    
-    @FXML
-    private Circle berlinHbf;
+	    @FXML
+	    private Circle seestr;
 
-    @FXML
-    private Circle bundestag;
+	    @FXML
+	    private Circle rehberge;
 
-    @FXML
-    private Circle brandenburgerTor;
-    
-    //U7
-    @FXML
-    private Circle johannisthalerChaussee;
+	    @FXML
+	    private Circle afrikanischestr;
 
-    @FXML
-    private Circle britzSüd;
+	    @FXML
+	    private Circle kurtSchumacherPlatz;
 
-    @FXML
-    private Circle parchimerAllee;
+	    @FXML
+	    private Circle scharnweberstr;
 
-    @FXML
-    private Circle blaschkoallee;
+	    @FXML
+	    private Circle otisstr;
 
-    @FXML
-    private Circle grenzallee;
+	    @FXML
+	    private Circle berlinHbf;
 
-    @FXML
-    private Circle berlinNeukölln;
+	    @FXML
+	    private Circle bundestag;
 
-    @FXML
-    private Circle karlMarxstr;
+	    @FXML
+	    private Circle brandenburgerTor;
 
-    @FXML
-    private Circle rathausNeukölln;
+	    @FXML
+	    private Circle johannisthalerChaussee;
 
-    @FXML
-    private Circle hermannplatz;
+	    @FXML
+	    private Circle britzSued;
 
-    @FXML
-    private Circle südstern;
+	    @FXML
+	    private Circle parchimerAllee;
 
-    @FXML
-    private Circle gneissenaustr;
+	    @FXML
+	    private Circle blaschkoallee;
 
-    @FXML
-    private Circle yorckstr;
+	    @FXML
+	    private Circle grenzallee;
 
-    @FXML
-    private Circle kleistpark;
+	    @FXML
+	    private Circle berlinNeukoelln;
 
-    @FXML
-    private Circle eisenacherstr;
+	    @FXML
+	    private Circle karlMarxstr;
 
-    @FXML
-    private Circle berlinerstr;
+	    @FXML
+	    private Circle rathausNeukoelln;
 
-    @FXML
-    private Circle konstanzerstr;
+	    @FXML
+	    private Circle hermannplatz;
 
-    @FXML
-    private Circle adenauerplatz;
-    
-    @FXML
-    private Circle blissestr;
+	    @FXML
+	    private Circle suedstern;
 
-    @FXML
-    private Circle wilmersdorferstr;
+	    @FXML
+	    private Circle gneissenaustr;
 
-    @FXML
-    private Circle richardWagnerPlatz;
+	    @FXML
+	    private Circle yorckstr;
 
-    @FXML
-    private Circle mierendorffplatz;
+	    @FXML
+	    private Circle kleistpark;
 
-    @FXML
-    private Circle jungfernheide;
+	    @FXML
+	    private Circle eisenacherstr;
 
-    @FXML
-    private Circle JakobKaiserPlatz;
+	    @FXML
+	    private Circle berlinerstr;
 
-    @FXML
-    private Circle halemweg;
+	    @FXML
+	    private Circle konstanzerstr;
 
-    @FXML
-    private Circle siemensdamm;
+	    @FXML
+	    private Circle adenauerplatz;
 
-    @FXML
-    private Circle rohrdamm;
+	    @FXML
+	    private Circle blissestr;
 
-    @FXML
-    private Circle paulsternstr;
+	    @FXML
+	    private Circle wilmersdorferstr;
 
-    @FXML
-    private Circle zitadelle;
+	    @FXML
+	    private Circle richardWagnerPlatz;
 
-    @FXML
-    private Circle altstadtSpandau;
-    
-    //U8
-    @FXML
-    private Circle boddinstr;
+	    @FXML
+	    private Circle mierendorffplatz;
 
-    @FXML
-    private Circle schönleinstr;
+	    @FXML
+	    private Circle jungfernheide;
 
-    @FXML
-    private Circle moritzplatz;
+	    @FXML
+	    private Circle JakobKaiserPlatz;
 
-    @FXML
-    private Circle heinrichHeinestr;
+	    @FXML
+	    private Circle halemweg;
 
-    @FXML
-    private Circle jannowitzbrücke;
+	    @FXML
+	    private Circle siemensdamm;
 
-    @FXML
-    private Circle weinmeisterstr;
+	    @FXML
+	    private Circle rohrdamm;
 
-    @FXML
-    private Circle rosenthalerPlatz;
+	    @FXML
+	    private Circle paulsternstr;
 
-    @FXML
-    private Circle bernauerstr;
+	    @FXML
+	    private Circle zitadelle;
 
-    @FXML
-    private Circle voltastr;
+	    @FXML
+	    private Circle altstadtSpandau;
 
-    @FXML
-    private Circle berlinGesundbrunnen;
+	    @FXML
+	    private Circle boddinstr;
 
-    @FXML
-    private Circle pankstr;
+	    @FXML
+	    private Circle schoenleinstr;
 
-    @FXML
-    private Circle osloerstr;
+	    @FXML
+	    private Circle moritzplatz;
 
-    @FXML
-    private Circle franzNeumannPlatz;
+	    @FXML
+	    private Circle heinrichHeinestr;
 
-    @FXML
-    private Circle residenzstr;
+	    @FXML
+	    private Circle jannowitzbruecke;
 
-    @FXML
-    private Circle paracelsusBad;
+	    @FXML
+	    private Circle weinmeisterstr;
 
-    @FXML
-    private Circle lindauerAllee;
-    //U9
-    @FXML
-    private Circle rathausSteglitz;
+	    @FXML
+	    private Circle rosenthalerPlatz;
 
-    @FXML
-    private Circle schlossstr;
+	    @FXML
+	    private Circle bernauerstr;
 
-    @FXML
-    private Circle waltherSchreiberPlatz;
+	    @FXML
+	    private Circle voltastr;
 
-    @FXML
-    private Circle friedrichWilhelmPlatz;
+	    @FXML
+	    private Circle berlinGesundbrunnen;
 
-    @FXML
-    private Circle bundesplatz;
+	    @FXML
+	    private Circle pankstr;
 
-    @FXML
-    private Circle güntzelstr;
+	    @FXML
+	    private Circle osloerstr;
 
-    @FXML
-    private Circle hansaplatz;
+	    @FXML
+	    private Circle franzNeumannPlatz;
 
-    @FXML
-    private Circle turmstr;
+	    @FXML
+	    private Circle residenzstr;
 
-    @FXML
-    private Circle Westhafen;
+	    @FXML
+	    private Circle paracelsusBad;
 
-    @FXML
-    private Circle Birkenstr;
+	    @FXML
+	    private Circle lindauerAllee;
 
-    @FXML
-    private Circle arumerstr;
+	    @FXML
+	    private Circle rathausSteglitz;
 
-    @FXML
-    private Circle nauenerPlatz;
-    //S1
-    @FXML
-    private Circle botanischerGarten;
+	    @FXML
+	    private Circle schlossstr;
 
-    @FXML
-    private Circle berlinFeuerbachstr;
+	    @FXML
+	    private Circle waltherSchreiberPlatz;
 
-    @FXML
-    private Circle friedenau;
+	    @FXML
+	    private Circle friedrichWilhelmPlatz;
 
-    @FXML
-    private Circle schöneberg;
+	    @FXML
+	    private Circle bundesplatz;
 
-    @FXML
-    private Circle juliusLeberBrücke;
+	    @FXML
+	    private Circle guentzelstr;
 
-    @FXML
-    private Circle anhalterBhf;
+	    @FXML
+	    private Circle hansaplatz;
 
-    @FXML
-    private Circle oranienburgerstr;
+	    @FXML
+	    private Circle turmstr;
 
-    @FXML
-    private Circle nordbahnhof;
+	    @FXML
+	    private Circle Westhafen;
 
-    @FXML
-    private Circle humboldthain;
+	    @FXML
+	    private Circle Birkenstr;
 
-    @FXML
-    private Circle bornholmerstr;
+	    @FXML
+	    private Circle arumerstr;
 
-    @FXML
-    private Circle wollankstr;
-    //S2
-    @FXML
-    private Circle marienfelde;
+	    @FXML
+	    private Circle nauenerPlatz;
 
-    @FXML
-    private Circle attilastr;
+	    @FXML
+	    private Circle botanischerGarten;
 
-    @FXML
-    private Circle priesterweg;
+	    @FXML
+	    private Circle berlinFeuerbachstr;
 
-    @FXML
-    private Circle südkreuz;
+	    @FXML
+	    private Circle friedenau;
 
-    @FXML
-    private Circle pankowHeinersdorf;
-    //S25
-    @FXML
-    private Circle Lankwitz;
+	    @FXML
+	    private Circle schoeneberg;
 
-    @FXML
-    private Circle südende;
-    //S3
-    @FXML
-    private Circle ostkreuz;
+	    @FXML
+	    private Circle juliusLeberBrücke;
 
-    @FXML
-    private Circle rummelsburgBhf;
+	    @FXML
+	    private Circle anhalterBhf;
 
-    @FXML
-    private Circle betriebsbahnhofRummelsburg;
+	    @FXML
+	    private Circle oranienburgerstr;
 
-    @FXML
-    private Circle karlshorst;
+	    @FXML
+	    private Circle nordbahnhof;
 
-    @FXML
-    private Circle wuhlheide;
-    //s41,s42
-    @FXML
-    private Circle treptowerPark;
+	    @FXML
+	    private Circle humboldthain;
 
-    @FXML
-    private Circle sonnenallee;
+	    @FXML
+	    private Circle bornholmerstr;
 
-    @FXML
-    private Circle hermannstr;
+	    @FXML
+	    private Circle wollankstr;
 
-    @FXML
-    private Circle hohenzollerndamm;
+	    @FXML
+	    private Circle marienfelde;
 
-    @FXML
-    private Circle halensee;
+	    @FXML
+	    private Circle attilastr;
 
-    @FXML
-    private Circle westkreuz;
+	    @FXML
+	    private Circle priesterweg;
 
-    @FXML
-    private Circle westend;
+	    @FXML
+	    private Circle suedkreuz;
 
-    @FXML
-    private Circle beusselstr;
+	    @FXML
+	    private Circle pankowHeinersdorf;
 
-    @FXML
-    private Circle prenzlauerAllee;
+	    @FXML
+	    private Circle Lankwitz;
 
-    @FXML
-    private Circle greifswalderstr;
+	    @FXML
+	    private Circle suedende;
 
-    @FXML
-    private Circle landsbergerAllee;
+	    @FXML
+	    private Circle ostkreuz;
 
-    @FXML
-    private Circle storkowerstr;
-    //s45
-    @FXML
-    private Circle adlershof;
+	    @FXML
+	    private Circle rummelsburgBhf;
 
-    @FXML
-    private Circle betriebsbahnhofSchöneweide;
+	    @FXML
+	    private Circle betriebsbahnhofRummelsburg;
 
-    @FXML
-    private Circle schöneweide;
+	    @FXML
+	    private Circle karlshorst;
 
-    @FXML
-    private Circle baumschulenweg;
+	    @FXML
+	    private Circle wuhlheide;
 
-    @FXML
-    private Circle köllnischeHeide;
-    //s47
-    @FXML
-    private Circle spindlersfeld;
+	    @FXML
+	    private Circle treptowerPark;
 
-    @FXML
-    private Circle oberspree;
-    //S7
-    @FXML
-    private Circle grunewald;
+	    @FXML
+	    private Circle sonnenallee;
 
-    @FXML
-    private Circle bellevue;
+	    @FXML
+	    private Circle hermannstr;
 
-    @FXML
-    private Circle hackescherMarkt;
+	    @FXML
+	    private Circle hohenzollerndamm;
 
-    @FXML
-    private Circle ostbahnhof;
+	    @FXML
+	    private Circle halensee;
 
-    @FXML
-    private Circle nöldnerplatz;
+	    @FXML
+	    private Circle westkreuz;
 
-    @FXML
-    private Circle friedrichsfeldeOst;
+	    @FXML
+	    private Circle westend;
 
-    @FXML
-    private Circle bhfSpringpfuhl;
+	    @FXML
+	    private Circle beusselstr;
 
-    @FXML
-    private Circle poelschaustr;
+	    @FXML
+	    private Circle prenzlauerAllee;
 
-    @FXML
-    private Circle savignyplatz;
+	    @FXML
+	    private Circle greifswalderstr;
 
-    @FXML
-    private Circle charlottenburg;
-    //s47
-    @FXML
-    private Circle plänterwald;
+	    @FXML
+	    private Circle landsbergerAllee;
+
+	    @FXML
+	    private Circle storkowerstr;
+
+	    @FXML
+	    private Circle adlershof;
+
+	    @FXML
+	    private Circle betriebsbahnhofSchoeneweide;
+
+	    @FXML
+	    private Circle schoeneweide;
+
+	    @FXML
+	    private Circle baumschulenweg;
+
+	    @FXML
+	    private Circle koellnischeHeide;
+
+	    @FXML
+	    private Circle spindlersfeld;
+
+	    @FXML
+	    private Circle oberspree;
+
+	    @FXML
+	    private Circle grunewald;
+
+	    @FXML
+	    private Circle bellevue;
+
+	    @FXML
+	    private Circle hackescherMarkt;
+
+	    @FXML
+	    private Circle ostbahnhof;
+
+	    @FXML
+	    private Circle noeldnerplatz;
+
+	    @FXML
+	    private Circle friedrichsfeldeOst;
+
+	    @FXML
+	    private Circle bhfSpringpfuhl;
+
+	    @FXML
+	    private Circle poelschaustr;
+
+	    @FXML
+	    private Circle savignyplatz;
+
+	    @FXML
+	    private Circle charlottenburg;
+
+	    @FXML
+	    private Circle plaenterwald;
 
 
 
     public void imprimirdatos(ActionEvent event) {
-    	System.out.println(plänterwald.getLayoutX() + " "+ plänterwald.getLayoutY());
+    	System.out.println(plaenterwald.getLayoutX() + " "+ plaenterwald.getLayoutY());
     	System.out.println("---------------");
     	System.out.println(grunewald.getLayoutX() + " "+ grunewald.getLayoutY());
         System.out.println(charlottenburg.getLayoutX() + " "+ charlottenburg.getLayoutY());
@@ -645,7 +636,7 @@ public class Controler {
         System.out.println(bellevue.getLayoutX() + " "+ bellevue.getLayoutY());
         System.out.println(hackescherMarkt.getLayoutX() + " "+ hackescherMarkt.getLayoutY());
         System.out.println(ostbahnhof.getLayoutX() + " "+ ostbahnhof.getLayoutY());
-        System.out.println(nöldnerplatz.getLayoutX() + " "+ nöldnerplatz.getLayoutY());
+        System.out.println(noeldnerplatz.getLayoutX() + " "+ noeldnerplatz.getLayoutY());
         System.out.println(friedrichsfeldeOst.getLayoutX() + " "+ friedrichsfeldeOst.getLayoutY());
         System.out.println(bhfSpringpfuhl.getLayoutX() + " "+ bhfSpringpfuhl.getLayoutY());
         System.out.println(poelschaustr.getLayoutX() + " "+ poelschaustr.getLayoutY());
@@ -654,10 +645,10 @@ public class Controler {
         System.out.println(oberspree.getLayoutX() + " "+ oberspree.getLayoutY());
     	System.out.println("---------------");
     	System.out.println(adlershof.getLayoutX() + " "+ adlershof.getLayoutY());
-        System.out.println(betriebsbahnhofSchöneweide.getLayoutX() + " "+ betriebsbahnhofSchöneweide.getLayoutY());
-        System.out.println(schöneweide.getLayoutX() + " "+ schöneweide.getLayoutY());
+        System.out.println(betriebsbahnhofSchoeneweide.getLayoutX() + " "+ betriebsbahnhofSchoeneweide.getLayoutY());
+        System.out.println(schoeneweide.getLayoutX() + " "+ schoeneweide.getLayoutY());
         System.out.println(baumschulenweg.getLayoutX() + " "+ baumschulenweg.getLayoutY());
-        System.out.println(köllnischeHeide.getLayoutX() + " "+ köllnischeHeide.getLayoutY());
+        System.out.println(koellnischeHeide.getLayoutX() + " "+ koellnischeHeide.getLayoutY());
     	System.out.println("---------------");
     	System.out.println(treptowerPark.getLayoutX() + " "+ treptowerPark.getLayoutY());
         System.out.println(sonnenallee.getLayoutX() + " "+ sonnenallee.getLayoutY());
@@ -679,18 +670,18 @@ public class Controler {
         System.out.println(wuhlheide.getLayoutX() + " "+ wuhlheide.getLayoutY()); 	
         System.out.println("---------------");
         System.out.println(Lankwitz.getLayoutX() + " "+ Lankwitz.getLayoutY());
-        System.out.println(südende.getLayoutX() + " "+ südende.getLayoutY());
+        System.out.println(suedende.getLayoutX() + " "+ suedende.getLayoutY());
         System.out.println("---------------");
         System.out.println(marienfelde.getLayoutX() + " "+ marienfelde.getLayoutY());
         System.out.println(attilastr.getLayoutX() + " "+ attilastr.getLayoutY());
         System.out.println(priesterweg.getLayoutX() + " "+ priesterweg.getLayoutY());
-        System.out.println(südkreuz.getLayoutX() + " "+ südkreuz.getLayoutY());
+        System.out.println(suedkreuz.getLayoutX() + " "+ suedkreuz.getLayoutY());
         System.out.println(pankowHeinersdorf.getLayoutX() + " "+ pankowHeinersdorf.getLayoutY());
         System.out.println("---------------");
         System.out.println(botanischerGarten.getLayoutX() + " "+ botanischerGarten.getLayoutY());
         System.out.println(berlinFeuerbachstr.getLayoutX() + " "+ berlinFeuerbachstr.getLayoutY());
         System.out.println(friedenau.getLayoutX() + " "+ friedenau.getLayoutY());
-        System.out.println(schöneberg.getLayoutX() + " "+ schöneberg.getLayoutY());
+        System.out.println(schoeneberg.getLayoutX() + " "+ schoeneberg.getLayoutY());
         System.out.println(juliusLeberBrücke.getLayoutX() + " "+ juliusLeberBrücke.getLayoutY());
         System.out.println(anhalterBhf.getLayoutX() + " "+ anhalterBhf.getLayoutY());
         System.out.println(oranienburgerstr.getLayoutX() + " "+ oranienburgerstr.getLayoutY());
@@ -704,7 +695,7 @@ public class Controler {
     	System.out.println(waltherSchreiberPlatz.getLayoutX() + " "+ waltherSchreiberPlatz.getLayoutY());
     	System.out.println(friedrichWilhelmPlatz.getLayoutX() + " "+ friedrichWilhelmPlatz.getLayoutY());
     	System.out.println(bundesplatz.getLayoutX() + " "+ bundesplatz.getLayoutY());
-    	System.out.println(güntzelstr.getLayoutX() + " "+ güntzelstr.getLayoutY());
+    	System.out.println(guentzelstr.getLayoutX() + " "+ guentzelstr.getLayoutY());
     	System.out.println(hansaplatz.getLayoutX() + " "+ hansaplatz.getLayoutY());
 	    System.out.println(turmstr.getLayoutX() + " "+ turmstr.getLayoutY());
 	    System.out.println(Westhafen.getLayoutX() + " "+ Westhafen.getLayoutY());
@@ -715,9 +706,9 @@ public class Controler {
     	System.out.println("---------------");
     	System.out.println(heinrichHeinestr.getLayoutX() + " "+ heinrichHeinestr.getLayoutY());
     	System.out.println(boddinstr.getLayoutX() + " "+ boddinstr.getLayoutY());
-    	System.out.println(schönleinstr.getLayoutX() + " "+ schönleinstr.getLayoutY());
+    	System.out.println(schoenleinstr.getLayoutX() + " "+ schoenleinstr.getLayoutY());
     	System.out.println(moritzplatz.getLayoutX() + " "+ moritzplatz.getLayoutY());
-    	System.out.println(jannowitzbrücke.getLayoutX() + " "+ jannowitzbrücke.getLayoutY());
+    	System.out.println(jannowitzbruecke.getLayoutX() + " "+ jannowitzbruecke.getLayoutY());
     	System.out.println(weinmeisterstr.getLayoutX() + " "+ weinmeisterstr.getLayoutY());
     	System.out.println(rosenthalerPlatz.getLayoutX() + " "+ rosenthalerPlatz.getLayoutY());
 	    System.out.println(bernauerstr.getLayoutX() + " "+ bernauerstr.getLayoutY());
@@ -732,15 +723,15 @@ public class Controler {
 	       	
     	System.out.println("---------------");
     	System.out.println(johannisthalerChaussee.getLayoutX() + " "+ johannisthalerChaussee.getLayoutY());
-    	System.out.println(britzSüd.getLayoutX() + " "+ britzSüd.getLayoutY());
+    	System.out.println(britzSued.getLayoutX() + " "+ britzSued.getLayoutY());
     	System.out.println(parchimerAllee.getLayoutX() + " "+ parchimerAllee.getLayoutY());
     	System.out.println(blaschkoallee.getLayoutX() + " "+ blaschkoallee.getLayoutY());
     	System.out.println(grenzallee.getLayoutX() + " "+ grenzallee.getLayoutY());
-    	System.out.println(berlinNeukölln.getLayoutX() + " "+ berlinNeukölln.getLayoutY());
+    	System.out.println(berlinNeukoelln.getLayoutX() + " "+ berlinNeukoelln.getLayoutY());
 	    System.out.println(karlMarxstr.getLayoutX() + " "+ karlMarxstr.getLayoutY());
-	    System.out.println(rathausNeukölln.getLayoutX() + " "+ rathausNeukölln.getLayoutY());
+	    System.out.println(rathausNeukoelln.getLayoutX() + " "+ rathausNeukoelln.getLayoutY());
 	    System.out.println(hermannplatz.getLayoutX() + " "+ hermannplatz.getLayoutY());
-	    System.out.println(südstern.getLayoutX() + " "+ südstern.getLayoutY());
+	    System.out.println(suedstern.getLayoutX() + " "+ suedstern.getLayoutY());
 	    System.out.println(gneissenaustr.getLayoutX() + " "+ gneissenaustr.getLayoutY());
 	    System.out.println(yorckstr.getLayoutX() + " "+ yorckstr.getLayoutY());
 	    System.out.println(kleistpark.getLayoutX() + " "+ kleistpark.getLayoutY());
@@ -772,10 +763,10 @@ public class Controler {
 	    System.out.println(altTempelhof.getLayoutX() + " "+ altTempelhof.getLayoutY());
 	    System.out.println(berlinTempelhof.getLayoutX() + " "+ berlinTempelhof.getLayoutY());
 	    System.out.println(paradestr.getLayoutX() + " "+ paradestr.getLayoutY());
-	    System.out.println(platzderLuftbrücke.getLayoutX() + " "+ platzderLuftbrücke.getLayoutY());
+	    System.out.println(platzderLuftbruecke.getLayoutX() + " "+ platzderLuftbruecke.getLayoutY());
 	    System.out.println(mehringdamm.getLayoutX() + " "+ mehringdamm.getLayoutY());
 	    System.out.println(kochstrCheckpointCharlie.getLayoutX() + " "+ kochstrCheckpointCharlie.getLayoutY());
-	    System.out.println(französischestr.getLayoutX() + " "+ französischestr.getLayoutY());
+	    System.out.println(franzoesischestr.getLayoutX() + " "+ franzoesischestr.getLayoutY());
 	    System.out.println(friedrichstr.getLayoutX() + " "+ friedrichstr.getLayoutY());
 	    System.out.println(naturkundenmuseum.getLayoutX() + " "+ naturkundenmuseum.getLayoutY());
 	    System.out.println(oranienburgerTor.getLayoutX() + " "+ oranienburgerTor.getLayoutY());
@@ -807,28 +798,28 @@ public class Controler {
 	    System.out.println(stadtmitte.getLayoutX() + " "+ stadtmitte.getLayoutY());
 	    System.out.println(hausvogteiplatz.getLayoutX() + " "+ hausvogteiplatz.getLayoutY());
 	    System.out.println(spittelmarkt.getLayoutX() + " "+ spittelmarkt.getLayoutY());
-	    System.out.println(märkischesMuseum.getLayoutX() + " "+ märkischesMuseum.getLayoutY());
+	    System.out.println(maerkischesMuseum.getLayoutX() + " "+ maerkischesMuseum.getLayoutY());
 	    System.out.println(klosterstr.getLayoutX() + " "+ klosterstr.getLayoutY());
 	    System.out.println(rosaLuxemburgPlatz.getLayoutX() + " "+ rosaLuxemburgPlatz.getLayoutY());
 	    System.out.println(senefelderplatz.getLayoutX() + " "+ senefelderplatz.getLayoutY());
-	    System.out.println(schönhauserAllee.getLayoutX() + " "+ schönhauserAllee.getLayoutY());
+	    System.out.println(schoenhauserAllee.getLayoutX() + " "+ schoenhauserAllee.getLayoutY());
 	    System.out.println(eberswalderstr.getLayoutX() + " "+ eberswalderstr.getLayoutY());
 	    System.out.println(vinetastr.getLayoutX() + " "+ vinetastr.getLayoutY());
-	    System.out.println(bülwstr.getLayoutX() + " "+ bülwstr.getLayoutY());
+	    System.out.println(buelwstr.getLayoutX() + " "+ buelwstr.getLayoutY());
 	    System.out.println("---------------");
 	    System.out.println(innsbruckerPlatz.getLayoutX() + " "+ innsbruckerPlatz.getLayoutY());
-	    System.out.println(rathausSchöneberg.getLayoutX() + " "+ rathausSchöneberg.getLayoutY());
+	    System.out.println(rathausSchoeneberg.getLayoutX() + " "+ rathausSchoeneberg.getLayoutY());
 	    System.out.println(bayerischerPlatz.getLayoutX() + " "+ bayerischerPlatz.getLayoutY());
 	    System.out.println(viktoriaLuisePlatz.getLayoutX() + " "+ viktoriaLuisePlatz.getLayoutY());
 	    System.out.println("---------------");
 	    System.out.println(krummeLanke.getLayoutX() + " "+ krummeLanke.getLayoutY());
-	    System.out.println(onkelTomsHütte.getLayoutX() + " "+ onkelTomsHütte.getLayoutY());
+	    System.out.println(onkelTomsHuette.getLayoutX() + " "+ onkelTomsHuette.getLayoutY());
 	    System.out.println(oskarHeleneHeim.getLayoutX() + " "+ oskarHeleneHeim.getLayoutY());
-	    System.out.println(freieUniversität.getLayoutX() + " "+ freieUniversität.getLayoutY());
+	    System.out.println(freieUniversitaet.getLayoutX() + " "+ freieUniversitaet.getLayoutY());
 	    System.out.println(dahlernDorf.getLayoutX() + " "+ dahlernDorf.getLayoutY());
 	    System.out.println(Podbielskiallee.getLayoutX() + " "+ Podbielskiallee.getLayoutY());
 	    System.out.println(breitenbachplatz.getLayoutX() + " "+ breitenbachplatz.getLayoutY());
-	    System.out.println(rüdesheimerPlatz.getLayoutX() + " "+ rüdesheimerPlatz.getLayoutY());
+	    System.out.println(ruedesheimerPlatz.getLayoutX() + " "+ ruedesheimerPlatz.getLayoutY());
 	    System.out.println(heidelbergerPlatz.getLayoutX() + " "+ heidelbergerPlatz.getLayoutY());
 	    System.out.println(fehrbellinerPlatz.getLayoutX() + " "+ fehrbellinerPlatz.getLayoutY());
 	    System.out.println(hohenzollernplatz.getLayoutX() + " "+ hohenzollernplatz.getLayoutY());
@@ -837,19 +828,19 @@ public class Controler {
 	    System.out.println("---------------");
 	    System.out.println(warchauerStr.getLayoutX() + " "+ warchauerStr.getLayoutY());
 	    System.out.println(schlesischesTor.getLayoutX() + " "+ schlesischesTor.getLayoutY());
-	    System.out.println(görlitzerBahnhof.getLayoutX() + " "+ görlitzerBahnhof.getLayoutY());
+	    System.out.println(goerlitzerBahnhof.getLayoutX() + " "+ goerlitzerBahnhof.getLayoutY());
 	    System.out.println(kottbusserTor.getLayoutX() + " "+ kottbusserTor.getLayoutY());
 	    System.out.println(prinzenstr.getLayoutX() + " "+ prinzenstr.getLayoutY());
 	    System.out.println(halleschesTor.getLayoutX() + " "+ halleschesTor.getLayoutY());
-	    System.out.println(möckernbrücke.getLayoutX() + " "+ möckernbrücke.getLayoutY());
+	    System.out.println(moeckernbruecke.getLayoutX() + " "+ moeckernbruecke.getLayoutY());
 	    System.out.println(gleisdreieck.getLayoutX() + " "+ gleisdreieck.getLayoutY());
-	    System.out.println(kurfürstenstr.getLayoutX() + " "+ kurfürstenstr.getLayoutY());
+	    System.out.println(kurfuerstenstr.getLayoutX() + " "+ kurfuerstenstr.getLayoutY());
 	    System.out.println(nollendorfplatz.getLayoutX() + " "+ nollendorfplatz.getLayoutY());
 	    System.out.println(wittenbergplatz.getLayoutX() + " "+ wittenbergplatz.getLayoutY());
-	    System.out.println(kurfürstendamm.getLayoutX() + " "+ kurfürstendamm.getLayoutY());
+	    System.out.println(kurfuerstendamm.getLayoutX() + " "+ kurfuerstendamm.getLayoutY());
 	    System.out.println(uhlandstr.getLayoutX() + " "+ uhlandstr.getLayoutY());
 	    System.out.println("U5---------------");
-	    System.out.println(alexan.getLayoutX() + " "+ alexan.getLayoutY());
+	    System.out.println(alexanderPlatz.getLayoutX() + " "+ alexanderPlatz.getLayoutY());
 	    System.out.println(chill.getLayoutX() + " "+ chill.getLayoutY());
 	    System.out.println(stra.getLayoutX() + " "+ stra.getLayoutY());
 	    System.out.println(weber.getLayoutX() + " "+ weber.getLayoutY());
