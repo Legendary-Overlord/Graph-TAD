@@ -9,42 +9,38 @@ import javafx.scene.shape.Circle;
 public class Controler {
 	
 	//U5
-	  @FXML
-	    private Circle chill;
+	@FXML
+    private Circle schillingstr;
 
+    @FXML
+    private Circle strausbergerPlatz;
 
-	    @FXML
-	    private Circle stra;
+    @FXML
+    private Circle weberwiese;
 
-	    @FXML
-	    private Circle weber;
+    @FXML
+    private Circle frankfurterTor;
 
-	    @FXML
-	    private Circle frankTor;
+    @FXML
+    private Circle frankfurterAlle;
 
-	    @FXML
-	    private Circle frankfur;
+    @FXML
+    private Circle magdalenenstr;
 
-	    @FXML
-	    private Circle magda;
+    @FXML
+    private Circle lichtenberg;
 
-	    @FXML
-	    private Circle lichst;
+    @FXML
+    private Circle friedrichsfelde;
 
-	    @FXML
-	    private Circle fried;
+    @FXML
+    private Circle tierpark;
 
-	    @FXML
-	    private Circle tier;
+    @FXML
+    private Circle biesdorfSued;
 
-	    @FXML
-	    private Circle biel;
-
-	    @FXML
-	    private Circle els;
-
-	    @FXML
-	    private Circle samar;
+    @FXML
+    private Circle samarieterstr;
 
 	    @FXML
 	    private Circle warchauerStr;
@@ -841,18 +837,18 @@ public class Controler {
 	    System.out.println(uhlandstr.getLayoutX() + " "+ uhlandstr.getLayoutY());
 	    System.out.println("U5---------------");
 	    System.out.println(alexanderPlatz.getLayoutX() + " "+ alexanderPlatz.getLayoutY());
-	    System.out.println(chill.getLayoutX() + " "+ chill.getLayoutY());
-	    System.out.println(stra.getLayoutX() + " "+ stra.getLayoutY());
-	    System.out.println(weber.getLayoutX() + " "+ weber.getLayoutY());
-	    System.out.println(frankTor.getLayoutX() + " "+ frankTor.getLayoutY());
-	    System.out.println(samar.getLayoutX() + " "+ samar.getLayoutY());
-	    System.out.println(frankfur.getLayoutX() + " "+ frankfur.getLayoutY());
-	    System.out.println(magda.getLayoutX() + " "+ magda.getLayoutY());
-	    System.out.println(lichst.getLayoutX() + " "+ lichst.getLayoutY());
-	    System.out.println(fried.getLayoutX() + " "+ fried.getLayoutY());
-	    System.out.println(tier.getLayoutX() + " "+ tier.getLayoutY());
-	    System.out.println(biel.getLayoutX() + " "+ biel.getLayoutY());
-	    System.out.println(els.getLayoutX() + " "+ els.getLayoutY());
+	    System.out.println(schillingstr.getLayoutX() + " "+ schillingstr.getLayoutY());
+	    System.out.println(strausbergerPlatz.getLayoutX() + " "+ strausbergerPlatz.getLayoutY());
+	    System.out.println(weberwiese.getLayoutX() + " "+ weberwiese.getLayoutY());
+	    System.out.println(frankfurterTor.getLayoutX() + " "+ frankfurterTor.getLayoutY());
+	    System.out.println(samarieterstr.getLayoutX() + " "+ samarieterstr.getLayoutY());
+	    System.out.println(frankfurterAlle .getLayoutX() + " "+ frankfurterAlle.getLayoutY());
+	    System.out.println(magdalenenstr.getLayoutX() + " "+ magdalenenstr.getLayoutY());
+	    System.out.println(lichtenberg.getLayoutX() + " "+ lichtenberg.getLayoutY());
+	    System.out.println(friedrichsfelde.getLayoutX() + " "+ friedrichsfelde.getLayoutY());
+	    System.out.println(tierpark.getLayoutX() + " "+ tierpark.getLayoutY());
+	    System.out.println(biesdorfSued.getLayoutX() + " "+ biesdorfSued.getLayoutY());
+
 	    
 	    	
 	    }
