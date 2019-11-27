@@ -175,9 +175,9 @@ public class Graph<E> {
 		g.gSize=gSize;
 	}
 	public void dijkstra(Graph<E> graph, Vertex<E> a) {
-		initGraph(graph);
+//		initGraph(graph);
 		a.dist=0;
-		PriorityQueue<Vertex<E>> Q = new PriorityQueue<>(new PQComparator());
+		PriorityQueue<Vertex<E>> Q = new PriorityQueue<>(new PQComparator<E>());
 		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v: graph.adjVertices.entrySet()) {
 			Vertex<E> temp=null;
 			if((temp=v.getKey())!=a) {
@@ -186,10 +186,8 @@ public class Graph<E> {
 			temp.pre=null;
 			Q.add(temp);
 		}
-		Set<Vertex<E>> vertexSet = new HashSet<Vertex<E>>();
 		while(!Q.isEmpty()) {
 			Vertex<E> u = Q.poll();
-			if(!vertexSet.contains(u)) {
 				for (Vertex<E> v : graph.getAdjVertices(u.obj)) {
 					Edge<E> x = graph.getEdge(u,v);
 					double w=0;
@@ -199,15 +197,16 @@ public class Graph<E> {
 					if(alt<v.dist) {
 						v.dist=alt;
 						v.pre=u;
-//		        	   Q.remove(v);
-//		        	   Q.add(v);
+		        	   Q.remove(v);
+		        	   Q.add(v);
 		           }
-			 }
-			vertexSet.add(u);	
-		}
+			 }	
 		}
 		
 	}
+	
+	
+
 	
 	public double[][] floydWarshall() {
 		int v = adjVertices.size();
@@ -336,10 +335,10 @@ public class Graph<E> {
            }
 	   }
 }
-@SuppressWarnings("rawtypes")
-class PQComparator implements Comparator<Vertex>{
+
+class PQComparator<E> implements Comparator<Vertex<E>>{
 	@Override
-	public int compare(Vertex o1, Vertex o2) {
+	public int compare(Vertex<E> o1, Vertex<E> o2) {
 		Double a1=o1.dist;
 		Double a2 = o2.dist;
 		return a2.compareTo(a1);

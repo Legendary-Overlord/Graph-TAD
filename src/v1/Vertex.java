@@ -31,6 +31,15 @@ public class Vertex<E> {
 		return dist;
 	}
 	
+	public void setDist(int dist) {
+		this.dist = dist;
+	}
+	
+	public void setPre(Vertex<E> pre){
+		this.pre = pre;
+		
+	}
+	
 	
 
 }
