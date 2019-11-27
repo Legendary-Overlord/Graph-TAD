@@ -174,8 +174,8 @@ public class Graph<E> {
 		g.gSize=gSize;
 	}
 	public void dijkstra(Graph<E> graph, Vertex<E> a) {
-		a.dist=0;
 		initGraph(graph);
+		a.dist=0;
 		PriorityQueue<Vertex<E>> Q = new PriorityQueue<>(new PQComparator());
 		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v: graph.adjVertices.entrySet()) {
 			Vertex<E> temp=null;
@@ -196,12 +196,14 @@ public class Graph<E> {
 		           if(alt<v.dist) {
 		        	   v.dist=alt;
 		        	   v.pre=u;
-		        	   Q.remove(v);
-		        	   Q.add(v);
+//		        	   Q.remove(v);
+//		        	   Q.add(v);
 		           }
-		        }
+			 }
 		}
+		
 	}
+	
 	public double[][] floydWarshall() {
 		int v = adjVertices.size();
 		double[][] dist = new double[v][v];
