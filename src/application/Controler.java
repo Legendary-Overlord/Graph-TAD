@@ -43,13 +43,13 @@ public class Controler {
 			String origin="";
 			String dest="";
 			Optional<String> resultOrigin = methodDialog.showAndWait();
-			Optional<String> resultDestination = methodDialog.showAndWait();
-			Optional<String> result = methodDialog.showAndWait();
 			if(resultOrigin.isPresent()) {
 				origin = resultOrigin.get();
 			}
+			Optional<String> resultDestination = methodDialog.showAndWait();
 			if(resultDestination.isPresent())
 				dest=resultDestination.get();
+			Optional<String> result = methodDialog.showAndWait();
 			if (result.isPresent()){
 				if(result.get().equals('1'))
 					opt=true;
