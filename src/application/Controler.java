@@ -61,7 +61,7 @@ public class Controler {
 					
 			}
 			ArrayList<Station> pathos = new ArrayList<>();
-			ArrayList<Vertex<Station>> vertexPathos = (opt)?sys.findPathBFS(origin, dest):sys.findPathDijkstra(origin, dest);
+			Set<Vertex<Station>> vertexPathos = (opt)?sys.findPathBFS(origin, dest):sys.findPathDijkstra(origin, dest);
 			vertexPathos.forEach(e->pathos.add(e.getObj()));
 			pathos.forEach(e->System.out.println(e.toString()));
 			displayPath(pathos);

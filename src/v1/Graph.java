@@ -145,13 +145,13 @@ public class Graph<E> {
 	    }
 	    return visited;
 	}
-	public ArrayList<Vertex<E>> printPath(Graph<E> graph, Vertex<E>a,Vertex<E>b){
-		ArrayList<Vertex<E>> list = new ArrayList<Vertex<E>>();
+	public Set<Vertex<E>> printPath(Graph<E> graph, Vertex<E>a,Vertex<E>b){
+		Set<Vertex<E>> list = new LinkedHashSet<Vertex<E>>();
 		printPath(graph,a,b,list);
 		return list;
 	}
 	
-	private void printPath(Graph<E> graph,Vertex<E>a,Vertex<E>b,ArrayList<Vertex<E>> lhs) {
+	private void printPath(Graph<E> graph,Vertex<E>a,Vertex<E>b,Set<Vertex<E>> lhs) {
 		if(a==b) {
 			lhs.add(a);
 		}else if(a.pre==null) {
