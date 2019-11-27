@@ -154,10 +154,10 @@ public class Graph<E> {
 	private void printPath(Graph<E> graph,Vertex<E>a,Vertex<E>b,Set<Vertex<E>> lhs) {
 		if(a==b) {
 			lhs.add(a);
-		}else if(a.pre==null) {
-			System.out.println(b.pre.toString());
+		}else {
+//			System.out.println(b.pre.toString());
 			printPath(graph,a,b.pre,lhs);
-			lhs.add(a);
+			lhs.add(b);
 		}
 	}
 	private void resetVertices() {
