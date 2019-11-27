@@ -1,13 +1,22 @@
 package application;
 
+import java.util.ArrayList;
+
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.StrokeType;
+import model.Station;
 
 public class Controler {
 	
+	@FXML
+	private Pane pane;
 	//U5
 	@FXML
     private Circle schillingstr;
@@ -620,8 +629,10 @@ public class Controler {
 
 	    @FXML
 	    private Circle plaenterwald;
+	    
+	    private ObservableList<Node> childrenList = pane.getChildren();
 
-
+	    
 
     public void imprimirdatos(ActionEvent event) {
     	System.out.println(plaenterwald.getLayoutX() + " "+ plaenterwald.getLayoutY());
@@ -852,6 +863,78 @@ public class Controler {
 	    
 	    	
 	    }
+    
+    public void displayPath(ArrayList<Station> visit){
+    	pane.getChildren().clear();
+    	pane.getChildren().addAll(childrenList);
+    	visit.forEach(e->{
+    		Circle x = new Circle();
+    		x.setRadius(7.0);
+    		x.setLayoutX(e.getX());
+    		x.setLayoutY(e.getY());
+    		if(e.getLines().size()>1)
+    			x.setFill(Paint.valueOf("#000000"));
+    		else
+    			x.setFill(Paint.valueOf(giveStationColor(e.getLines().get(0))));
+    		x.setStroke(Paint.valueOf("#000000"));
+    		x.setStrokeType(StrokeType.INSIDE);
+    	});
+    	
+    }
+    private String giveStationColor(String line) {
+    	String color="";
+    	switch(line) {
+    	case "U1":
+    		color="#1fff4a";
+    		break;
+    	case "U2":
+    		color="#f35b0e";
+    		break;
+    	case "U3":
+    		color="#61abd0";
+    		break;
+    	case "U4":
+    		color="#ffea4e";
+    		break;
+    	case "U5":
+    		color="#804000";
+    		break;
+    	case "U55":
+    		color="#804001";
+    		break;
+    	case "U6":
+    		color="#8c6797";
+    		break;
+    	case "U7":
+    		color="#61abd0";
+    		break;
+    	case "U8":
+    		color="#2742b9";
+    		break;
+    	case "U9":
+    		color="#fe9737";
+    		break;
+    	case "S1":
+    		color="#f885eb";
+    		break;
+    	case "S2":
+    		color="#4cc234";
+    		break;
+    	case "S3":
+    		color="#2742b8";
+    		break;
+    	case "S25":
+    		color="#fe9737";
+    		break;
+    	case "S41":
+    		color="#eb984e";
+    		break;
+    	case "S45":
+    		color="#eb983e";
+    		break;
+    	}
+    	return color;
+    }
 }
 	    
 
