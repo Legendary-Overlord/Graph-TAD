@@ -58,7 +58,7 @@ public class BVBS {
 			String[] s = stations.get(i).split(",");
 			int dist = Integer.parseInt(s[4]);
 			if(dist!=0) {
-				graph.addEdge(findStation(sts,s[0]), findStation(sts,stations.get(i-1).split(",")[0]), dist);
+				graph.addEdge(findStation(sts,stations.get(i-1).split(",")[0]),findStation(sts,s[0]), dist);
 			}
 		}
 	}
