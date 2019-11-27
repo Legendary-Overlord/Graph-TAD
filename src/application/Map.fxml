@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Circle?>
 
-<Pane prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controler">
+<Pane fx:id="pane" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controler">
    <children>
       <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="50.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
          <image>
