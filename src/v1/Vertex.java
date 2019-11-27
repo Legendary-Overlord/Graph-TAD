@@ -18,6 +18,18 @@ public class Vertex<E> {
 	public String toString() {
 		return "Vertex [obj=" + obj.toString() + ", pre=" + pre + ", dist=" + dist + "]";
 	}
+
+	public E getObj() {
+		return obj;
+	}
+
+	public Vertex<E> getPre() {
+		return pre;
+	}
+
+	public double getDist() {
+		return dist;
+	}
 	
 	
 

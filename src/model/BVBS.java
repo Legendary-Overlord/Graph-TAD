@@ -20,7 +20,6 @@ public class BVBS {
 	
 	public BVBS(boolean directed) {
 		this.graph = new Graph<>(directed);
-		this.stationNum = 0;
 		sts = new ArrayList<>();
 		try {
 			loadCSV();
@@ -28,6 +27,7 @@ public class BVBS {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		stationNum = sts.size();
 	}
 	
 	private void loadCSV() throws IOException {
@@ -83,6 +83,14 @@ public class BVBS {
 		Station dest = findStation(sts,destination);
 		graph.dijkstra(graph, graph.findVertex(origin));
 		return graph.printPath(graph, graph.findVertex(origin), graph.findVertex(dest));
+	}
+
+	public ArrayList<Station> getSts() {
+		return sts;
+	}
+
+	public void setSts(ArrayList<Station> sts) {
+		this.sts = sts;
 	}
 	
 	
