@@ -126,7 +126,7 @@ public class Graph<E> {
 	    }
 	    return visited;
 	}
-	public Set<Vertex<E>> breadthFirstSearch(Graph<E> graph, Vertex<E> root, Vertex<E> dest) {
+	public Set<Vertex<E>> breadthFirstSearch(Graph<E> graph, Vertex<E> root) {
 		resetVertices();
 	    Set<Vertex<E>> visited = new LinkedHashSet<Vertex<E>>();
 	    Queue<Vertex<E>> queue = new LinkedList<Vertex<E>>();
@@ -142,8 +142,6 @@ public class Graph<E> {
 	                queue.add(v);
 	            }
 	        }
-	        if(Vertex==dest)
-	        	break;
 	    }
 	    return visited;
 	}
@@ -159,6 +157,7 @@ public class Graph<E> {
 		}else if(a.pre==null) {
 		//do nothing	
 		}else {
+			System.out.println(b.pre.toString());
 			printPath(graph,a,b.pre,lhs);
 			lhs.add(a);
 		}
