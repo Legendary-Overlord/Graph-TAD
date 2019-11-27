@@ -51,9 +51,9 @@ public class Controler {
 				dest=resultDestination.get();
 			Optional<String> result = methodDialog.showAndWait();
 			if (result.isPresent()){
-				if(result.get().equals('1'))
+				if(result.get().equals("1"))
 					opt=true;
-				else if(result.get().equals('2'))
+				else if(result.get().equals("2"))
 						opt=false;
 				else {
 					throw new UserInputException();
@@ -63,6 +63,7 @@ public class Controler {
 			ArrayList<Station> pathos = new ArrayList<>();
 			Set<Vertex<Station>> vertexPathos = (opt)?sys.findPathBFS(origin, dest):sys.findPathDijkstra(origin, dest);
 			vertexPathos.forEach(e->pathos.add(e.getObj()));
+			pathos.forEach(e->System.out.println(e.toString()));
 			displayPath(pathos);
 			
 		}catch(UserInputException e) {

@@ -108,7 +108,7 @@ public class Graph<E> {
 	    	edgeWeight.remove(rm);
 	}
 	public List<Vertex<E>> getAdjVertices(E e) {
-	    return adjVertices.get(new Vertex<E>(e));
+	    return adjVertices.get(findVertex(e));
 	}
 	public Set<Vertex<E>> depthFirstSearch(Graph<E> graph, Vertex<E> root) {
 		resetVertices();
