@@ -3,6 +3,7 @@ package v1;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -185,21 +186,25 @@ public class Graph<E> {
 			temp.pre=null;
 			Q.add(temp);
 		}
+		Set<Vertex<E>> vertexSet = new HashSet<Vertex<E>>();
 		while(!Q.isEmpty()) {
 			Vertex<E> u = Q.poll();
-			 for (Vertex<E> v : graph.getAdjVertices(u.obj)) {
-				 Edge<E> x = graph.getEdge(u,v);
-				 double w=0;
-				 if(x!=null)
-					 w=x.weight;
-		           double alt = v.dist+w;
-		           if(alt<v.dist) {
-		        	   v.dist=alt;
-		        	   v.pre=u;
+			if(!vertexSet.contains(u)) {
+				for (Vertex<E> v : graph.getAdjVertices(u.obj)) {
+					Edge<E> x = graph.getEdge(u,v);
+					double w=0;
+					if(x!=null)
+						w=x.weight;
+					double alt = v.dist+w;
+					if(alt<v.dist) {
+						v.dist=alt;
+						v.pre=u;
 //		        	   Q.remove(v);
 //		        	   Q.add(v);
 		           }
 			 }
+			vertexSet.add(u);	
+		}
 		}
 		
 	}
