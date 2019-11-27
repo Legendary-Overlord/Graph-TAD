@@ -72,13 +72,13 @@ public class BVBS {
 		}
 		return x;
 	}
-	public Set<Vertex<Station>> findPathBFS(String rootStation, String destination){
+	public ArrayList<Vertex<Station>> findPathBFS(String rootStation, String destination){
 		Station origin = findStation(sts,rootStation);
 		Station dest = findStation(sts,destination);
 		graph.breadthFirstSearch(graph, graph.findVertex(origin));
 		return graph.printPath(graph, graph.findVertex(origin), graph.findVertex(dest));
 	}
-	public Set<Vertex<Station>> findPathDijkstra(String rootStation, String destination){
+	public ArrayList<Vertex<Station>> findPathDijkstra(String rootStation, String destination){
 		Station origin = findStation(sts,rootStation);
 		Station dest = findStation(sts,destination);
 		graph.dijkstra(graph, graph.findVertex(origin));
