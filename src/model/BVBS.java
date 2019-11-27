@@ -75,7 +75,7 @@ public class BVBS {
 	public Set<Vertex<Station>> findPathBFS(String rootStation, String destination){
 		Station origin = findStation(sts,rootStation);
 		Station dest = findStation(sts,destination);
-		return graph.breadthFirstSearch(graph, graph.findVertex(origin));
+		return graph.breadthFirstSearch(graph, graph.findVertex(origin),graph.findVertex(dest));
 //		return graph.printPath(graph, graph.findVertex(origin), graph.findVertex(dest));
 	}
 	public Set<Vertex<Station>> findPathDijkstra(String rootStation, String destination){

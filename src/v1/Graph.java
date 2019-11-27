@@ -126,7 +126,7 @@ public class Graph<E> {
 	    }
 	    return visited;
 	}
-	public Set<Vertex<E>> breadthFirstSearch(Graph<E> graph, Vertex<E> root) {
+	public Set<Vertex<E>> breadthFirstSearch(Graph<E> graph, Vertex<E> root, Vertex<E> dest) {
 		resetVertices();
 	    Set<Vertex<E>> visited = new LinkedHashSet<Vertex<E>>();
 	    Queue<Vertex<E>> queue = new LinkedList<Vertex<E>>();
@@ -142,6 +142,8 @@ public class Graph<E> {
 	                queue.add(v);
 	            }
 	        }
+	        if(Vertex==dest)
+	        	break;
 	    }
 	    return visited;
 	}
