@@ -85,6 +85,7 @@ public class Controler {
     public void displayPath(ArrayList<Station> visit){
 //    	pane.getChildren().clear();
 //    	pane.getChildren().addAll(childrenList);
+    	String path="";
     	visit.forEach(e->{
     		Circle x = new Circle();
     		x.setRadius(7.0);
@@ -98,7 +99,14 @@ public class Controler {
     		x.setStrokeType(StrokeType.INSIDE);
     		pane.getChildren().add(x);
     	});
-    	System.out.println(pane.getChildren().size());
+    	for(Station e:visit) {
+    		path+=e.getName()+", ";
+    	}
+    	Alert alert = new Alert(AlertType.INFORMATION);
+    	alert.setTitle("Path");
+    	alert.setHeaderText("Follow these sequence");
+    	alert.setContentText(path);
+    	alert.showAndWait();
     }
     private String giveStationColor(String line) {
     	String color="";
