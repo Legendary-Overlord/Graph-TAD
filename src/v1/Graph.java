@@ -155,8 +155,6 @@ public class Graph<E> {
 		if(a==b) {
 			lhs.add(a);
 		}else if(a.pre==null) {
-		//do nothing	
-		}else {
 			System.out.println(b.pre.toString());
 			printPath(graph,a,b.pre,lhs);
 			lhs.add(a);
