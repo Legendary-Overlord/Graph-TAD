@@ -155,8 +155,8 @@ Kottbusser Tor,U8,718,372,2
 Schoenleinstr.,U8,718,395,2
 Hermannplatz,U8,718,417,2
 Boddinstr.,U8,718,438,1
-Leinestr.,U8,CERRADA en u8,CERRADA en u8,2
-Hermannstr.,U8,cerrada en u8,cerrada en u8,1
+Leinestr.,U8,0,0,2
+Hermannstr.,U8,0,0,1
 Nauener Platz,U9,490,113,0
 Leopoldplatz,U9,468,135,2
 Amrumer str.,U9,459,143,1
@@ -227,34 +227,34 @@ Karlshorst,S3,969,398,3
 Betriebsbahnhof Rummelsburg,S3,918,382,3
 Rummelsburg Bhf,S3,900,363,2
 Ostkreuz,S3,858,353,2
-Ostkreuz,"S41,S42",858,353,0
-Treptower Park,"S41,S42",858,405,7
-Sonnenallee,"S41,S42",817,461,2
-Berlin-Neukoelln,"S41,S42",772,484,2
-Hermannstr.,"S41,S42",718,484,1
-Berlin-Tempelhof,"S41,S42",615,484,4
-Suedkreuz,"S41,S42",550,484,3
-Schoeneberg,"S41,S42",490,484,2
-Innsbrucker Platz,"S41,S42",457,482,1
-Bundesplatz,"S41,S42",395,484,2
-Heidelberger Platz,"S41,S42",321,484,2
-Hohenzollerndamm,"S41,S42",282,445,2
-Halensee,"S41,S42",275,376,1
-Westkreuz,"S41,S42",275,339,2
-Messe Nord/ICC,"S41,S42",,,2
-Westend,"S41,S42",275,249,1
-Jungfernheide,"S41,S42",320,186,3
-Beusselstr.,"S41,S42",388,165,2
-Westhafen,"S41,S42",446,201,2
-Wedding,"S41,S42",496,163,3
-Berlin-Gesundbrunnen,"S41,S42",594,163,4
-Schoenhauser Allee,"S41,S42",678,163,2
-Prenzlauer Allee,"S41,S42",772,163,1
-Greifswalder str.,"S41,S42",817,179,2
-Landsberger Allee,"S41,S42",858,249,2
-Storkower str.,"S41,S42",858,288,2
-Frankfurter Allee,"S41,S42",858,323,2
-Ostkreuz,"S41,S42",858,353,2
+Ostkreuz,S41,858,353,0
+Treptower Park,S41,858,405,7
+Sonnenallee,S41,817,461,2
+Berlin-Neukoelln,S41,772,484,2
+Hermannstr.,S41,718,484,1
+Berlin-Tempelhof,S41,615,484,4
+Suedkreuz,S41,550,484,3
+Schoeneberg,S41,490,484,2
+Innsbrucker Platz,S41,457,482,1
+Bundesplatz,S41,395,484,2
+Heidelberger Platz,S41,321,484,2
+Hohenzollerndamm,S41,282,445,2
+Halensee,S41,275,376,1
+Westkreuz,S41,275,339,2
+Messe Nord/ICC,S41,0,0,2
+Westend,S41,275,249,1
+Jungfernheide,S41,320,186,3
+Beusselstr.,S41,388,165,2
+Westhafen,S41,446,201,2
+Wedding,S41,496,163,3
+Berlin-Gesundbrunnen,S41,594,163,4
+Schoenhauser Allee,S41,678,163,2
+Prenzlauer Allee,S41,772,163,1
+Greifswalder str.,S41,817,179,2
+Landsberger Allee,S41,858,249,2
+Storkower str.,S41,858,288,2
+Frankfurter Allee,S41,858,323,2
+Ostkreuz,S41,858,353,2
 Adlershof,S45,983,552,0
 Betriebsbahnhof Schoeneweide,S45,969,535,2
 Schoeneweide,S45,942,510,3
@@ -280,7 +280,7 @@ Heidelberger Platz,S46,321,484,2
 Hohenzollerndamm,S46,282,445,2
 Halensee,S46,275,376,2
 Westkreuz,S46,275,339,1
-Messe Nord/ICC,S46,,,2
+Messe Nord/ICC,S46,0,0,2
 Westend,S46,275,249,1
 Spindlersfeld,S47,1017,518,0
 Oberspree,S47,976,517,3
