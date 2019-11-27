@@ -177,7 +177,7 @@ public class Graph<E> {
 	public void dijkstra(Graph<E> graph, Vertex<E> a) {
 //		initGraph(graph);
 		a.dist=0;
-		PriorityQueue<Vertex<E>> Q = new PriorityQueue<>(new PQComparator<E>());
+		PriorityQueue<Vertex<E>> Q = new PriorityQueue<>(new PQComparator<>());
 		for(Map.Entry<Vertex<E>, List<Vertex<E>>> v: graph.adjVertices.entrySet()) {
 			Vertex<E> temp=null;
 			if((temp=v.getKey())!=a) {
@@ -193,7 +193,7 @@ public class Graph<E> {
 					double w=0;
 					if(x!=null)
 						w=x.weight;
-					double alt = v.dist+w;
+					double alt = u.dist+w;
 					if(alt<v.dist) {
 						v.dist=alt;
 						v.pre=u;
@@ -341,6 +341,6 @@ class PQComparator<E> implements Comparator<Vertex<E>>{
 	public int compare(Vertex<E> o1, Vertex<E> o2) {
 		Double a1=o1.dist;
 		Double a2 = o2.dist;
-		return a2.compareTo(a1);
+		return a1.compareTo(a2);
 	}
 }
