@@ -96,8 +96,9 @@ public class Controler {
     			x.setFill(Paint.valueOf(giveStationColor(e.getLines().get(0))));
     		x.setStroke(Paint.valueOf("#000000"));
     		x.setStrokeType(StrokeType.INSIDE);
+    		pane.getChildren().add(x);
     	});
-    	
+    	System.out.println(pane.getChildren().size());
     }
     private String giveStationColor(String line) {
     	String color="";
