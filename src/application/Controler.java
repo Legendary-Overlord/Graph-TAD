@@ -42,11 +42,11 @@ public class Controler {
 			boolean opt = false;
 			String origin="";
 			String dest="";
-			Optional<String> resultOrigin = methodDialog.showAndWait();
+			Optional<String> resultOrigin = originDialog.showAndWait();
 			if(resultOrigin.isPresent()) {
 				origin = resultOrigin.get();
 			}
-			Optional<String> resultDestination = methodDialog.showAndWait();
+			Optional<String> resultDestination = destinyDialog.showAndWait();
 			if(resultDestination.isPresent())
 				dest=resultDestination.get();
 			Optional<String> result = methodDialog.showAndWait();
@@ -77,13 +77,13 @@ public class Controler {
 	
 	private BVBS sys = new BVBS(false);
 	    
-	private ObservableList<Node> childrenList = pane.getChildren();
+//	private ObservableList<Node> childrenList = pane.getChildren();
 
 	    
 
     public void displayPath(ArrayList<Station> visit){
-    	pane.getChildren().clear();
-    	pane.getChildren().addAll(childrenList);
+//    	pane.getChildren().clear();
+//    	pane.getChildren().addAll(childrenList);
     	visit.forEach(e->{
     		Circle x = new Circle();
     		x.setRadius(7.0);
