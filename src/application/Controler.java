@@ -104,7 +104,7 @@ public class Controler {
     	}
     	Alert alert = new Alert(AlertType.INFORMATION);
     	alert.setTitle("Path");
-    	alert.setHeaderText("Follow these sequence");
+    	alert.setHeaderText("Follow the sequence");
     	alert.setContentText(path);
     	alert.showAndWait();
     }
